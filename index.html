@@ -1,0 +1,1895 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>何嘉禾 Cameron · Explorer / Commercial</title>
+  <meta name="description" content="何嘉禾 Cameron — 上海理工数据科学 2026 届 · 美团 产品 / eBay 品类 / Museland 内容评测 / 易海创腾 出海营销 四段实习 · 求职 出海 / AI 相关 方向。" />
+  <meta name="author" content="何嘉禾 Cameron He" />
+  <meta name="keywords" content="何嘉禾, Cameron He, 上海理工, 数据科学, 美团 产品经理 实习, eBay 品类管理 实习, Museland, 易海创腾, SEO, SEM, Google Ads, 出海, AI, AI 产品, AI 商务, 出海营销, 跨境电商, 2026 届, 求职" />
+  <meta name="theme-color" content="#F2EDE2" />
+
+  <!-- Open Graph (WeChat / LinkedIn / Slack preview) -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="何嘉禾 Cameron · 一个探险家" />
+  <meta property="og:description" content="上海理工数据科学 2026 届 · 美团 产品 / eBay 品类 / Museland 内容评测 / 易海创腾 出海营销 四段实习 · 用数据看清问题，用商务解决问题。" />
+  <meta property="og:image" content="./og-image.svg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="profile:first_name" content="嘉禾" />
+  <meta property="profile:last_name" content="何" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="何嘉禾 Cameron · 一个探险家" />
+  <meta name="twitter:description" content="上海理工 · 数据科学 · 2026 届 · open to work" />
+  <meta name="twitter:image" content="./og-image.svg" />
+
+  <!-- Favicon (inline SVG — editorial ochre seal) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23F2EDE2'/><circle cx='32' cy='32' r='13' fill='%23B8532A'/><circle cx='32' cy='32' r='22' fill='none' stroke='%231A1815' stroke-opacity='0.5' stroke-width='1'/><text x='32' y='37' text-anchor='middle' font-family='Space Grotesk, sans-serif' font-weight='700' font-size='14' fill='%23F2EDE2'>何</text></svg>" />
+  <link rel="apple-touch-icon" href="./og-image.svg" />
+
+  <!-- ==========================================================
+       ALL EDITABLE CONTENT IS IN THE <script id="site-content"> JSON BLOCK BELOW.
+       Search for "EDIT_ME" — change your name, role, email, links there.
+       ========================================================== -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind Play CDN (includes JIT, arbitrary values, plugins) -->
+  <!-- Tailwind v3 Play CDN — required by inline JS theme config below -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    /* Palette names are kept for diff-friendliness but the values are now the
+       EDITORIAL palette: paper-white bg, ink text, single ochre accent, 4 narrative chapter colors. */
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            /* Paper (formerly "ink" dark bg) — warm ivory tones, lightest → slightly darker */
+            ink: {
+              950: '#F2EDE2',  /* main paper bg */
+              900: '#FAF6EC',  /* paper hi — card / elevated */
+              800: '#E6DFCE',  /* paper lo — pressed / subtle section bg */
+              700: '#D8CFB8',  /* rule / hairline */
+            },
+            /* Accent (formerly "neon") — single editorial ochre + narrative chapter colors */
+            neon: {
+              cyan:    '#B8532A',  /* primary accent — ochre red */
+              magenta: '#D26A3E',  /* accent hover / warmer */
+              violet:  '#2E5B7E',  /* narrative-navy (eBay chapter) */
+              lime:    '#4C6B3D',  /* narrative-olive (AI startup chapter) */
+            },
+            /* Ink text tones (formerly "fog" light-text-on-dark) — now dark-text-on-paper */
+            fog: {
+              100: '#1A1815',  /* primary text — near-black */
+              300: '#3B3730',  /* body / secondary */
+              500: '#6B6555',  /* meta / caption */
+              700: '#968F7C',  /* placeholder / disabled */
+            },
+          },
+          fontFamily: {
+            display: ['"Space Grotesk"', 'Inter', 'system-ui', 'sans-serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['"Source Serif 4"', '"PingFang SC"', 'Georgia', 'serif'],
+            mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* ============================================================
+       EDITORIAL PALETTE — the single source of truth
+       ============================================================ */
+    :root {
+      /* Paper */
+      --paper:       #F2EDE2;   /* main bg — warm ivory */
+      --paper-hi:    #FAF6EC;   /* card / elevated */
+      --paper-lo:    #E6DFCE;   /* pressed / subtle section */
+      --rule:        #D8CFB8;   /* hairline */
+      --rule-soft:   rgba(26,24,21,0.08);
+
+      /* Ink */
+      --ink-1:       #1A1815;   /* primary text */
+      --ink-2:       #3B3730;   /* body */
+      --ink-3:       #6B6555;   /* meta / caption */
+      --ink-4:       #968F7C;   /* placeholder */
+
+      /* Accent + narrative chapter colors */
+      --accent:      #B8532A;   /* editorial ochre — primary brand */
+      --accent-hi:   #D26A3E;   /* hover */
+      --accent-lo:   #8F3E1E;   /* pressed */
+      --accent-bg:   rgba(184,83,42,0.08);
+
+      --n-meituan:   #B8532A;   /* chapter 1 — 美团 (ochre) */
+      --n-ebay:      #2E5B7E;   /* chapter 2 — eBay (navy) */
+      --n-zhulu:     #4C6B3D;   /* chapter 3 — 逐路行 AI (olive) */
+      --n-yeehai:    #B89141;   /* chapter 4 — 易海创腾 (amber) */
+    }
+
+    html, body { background: var(--paper); color: var(--ink-1); }
+    html { scroll-behavior: smooth; }
+    body { font-feature-settings: "ss01", "cv11"; }
+
+    /* Selection */
+    ::selection { background: var(--accent); color: var(--paper); }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-track { background: var(--paper); }
+    ::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--ink-4); }
+
+    /* Grid backdrop — subtle ink grid on paper */
+    .bg-grid {
+      background-image:
+        linear-gradient(to right, rgba(26,24,21,0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(26,24,21,0.05) 1px, transparent 1px);
+      background-size: 56px 56px;
+      mask-image: radial-gradient(ellipse at 50% 30%, #000 20%, transparent 70%);
+      -webkit-mask-image: radial-gradient(ellipse at 50% 30%, #000 20%, transparent 70%);
+    }
+
+    /* Paper grain — dark fibers multiplied onto paper */
+    .bg-noise::after {
+      content: "";
+      position: fixed; inset: 0; pointer-events: none; z-index: 1;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.10  0 0 0 0 0.09  0 0 0 0 0.08  0 0 0 0.09 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+      opacity: 0.55;
+      mix-blend-mode: multiply;
+    }
+
+    /* Accent heading — subtle ochre wash (no longer a neon gradient) */
+    .grad-text {
+      color: var(--accent);
+      position: relative;
+      display: inline-block;
+    }
+    .grad-text::after {
+      content: ""; position: absolute; left: 0; right: 0; bottom: -0.06em; height: 0.38em;
+      background: var(--accent);
+      opacity: 0.10;
+      border-radius: 2px;
+      z-index: -1;
+      transform-origin: left;
+      animation: underlineIn 1.2s cubic-bezier(.2,.8,.2,1) .6s both;
+    }
+    @keyframes underlineIn { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+    /* Soft color washes — pale sepia / peach, barely there */
+    .blob { position: absolute; border-radius: 9999px; filter: blur(90px); opacity: 0.32; }
+    .blob-1 { width: 520px; height: 520px; background: #E2B79A; top: -120px; left: -120px; animation: float1 18s ease-in-out infinite; }
+    .blob-2 { width: 460px; height: 460px; background: #C8B88A; top: 20%; right: -140px; animation: float2 22s ease-in-out infinite; }
+    .blob-3 { width: 380px; height: 380px; background: #B8CBB0; bottom: -120px; left: 30%; animation: float3 24s ease-in-out infinite; opacity: 0.22; }
+    @keyframes float1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(60px,80px)} }
+    @keyframes float2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-80px,60px)} }
+    @keyframes float3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(40px,-60px)} }
+
+    /* Ruled border — editorial hairline */
+    .neon-border {
+      position: relative;
+      background: var(--paper-hi);
+      border: 1px solid var(--rule);
+    }
+    .neon-border:hover { border-color: var(--accent); box-shadow: 0 4px 24px -8px rgba(184,83,42,0.25); }
+
+    /* Card — paper with thin ink hairline */
+    .glow-card {
+      position: relative;
+      background: var(--paper-hi);
+      border: 1px solid var(--rule);
+      transition: transform .4s ease, border-color .4s ease, box-shadow .4s ease;
+    }
+    .glow-card::before {
+      content: "";
+      position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+      background: radial-gradient(400px circle at var(--mx,50%) var(--my,50%), rgba(184,83,42,0.08), transparent 40%);
+      opacity: 0; transition: opacity .4s ease;
+    }
+    .glow-card:hover { transform: translateY(-3px); border-color: var(--accent); box-shadow: 0 14px 40px -18px rgba(26,24,21,0.25); }
+    .glow-card:hover::before { opacity: 1; }
+
+    /* Marquee */
+    @keyframes marquee { from { transform: translateX(0) } to { transform: translateX(-50%) } }
+    .marquee-track { animation: marquee 40s linear infinite; }
+
+    /* Reveal on scroll */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1); }
+    .reveal.in { opacity: 1; transform: none; }
+
+    /* Cursor glow — paper warm spotlight */
+    .cursor-glow {
+      position: fixed; pointer-events: none; z-index: 2;
+      width: 500px; height: 500px; border-radius: 9999px;
+      background: radial-gradient(circle, rgba(184,83,42,0.08), transparent 60%);
+      transform: translate(-50%,-50%);
+      transition: opacity .3s;
+      mix-blend-mode: multiply;
+    }
+
+    /* Button — editorial primary (filled ink) + ghost (ink outline) */
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: .6rem;
+      padding: .85rem 1.4rem; border-radius: 9999px;
+      background: var(--ink-1);
+      color: var(--paper); font-weight: 600; letter-spacing: .01em;
+      border: 1px solid var(--ink-1);
+      transition: background .25s ease, color .25s ease, transform .3s ease, box-shadow .3s ease;
+    }
+    .btn-primary:hover { background: var(--accent); border-color: var(--accent); transform: translateY(-1px); box-shadow: 0 8px 24px -10px rgba(184,83,42,0.5); }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: .6rem;
+      padding: .85rem 1.4rem; border-radius: 9999px;
+      border: 1px solid var(--ink-1);
+      color: var(--ink-1); font-weight: 500;
+      background: transparent;
+      transition: all .25s ease;
+    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-bg); }
+
+    /* Section label — editorial kicker */
+    .section-label { display: inline-flex; align-items: center; gap: .6rem; font-family: "JetBrains Mono", monospace; font-size: .72rem; color: var(--ink-3); letter-spacing: .18em; text-transform: uppercase; }
+    .section-label::before { content: ""; display: inline-block; width: 28px; height: 1px; background: var(--accent); }
+
+    /* Hero number ticker line */
+    .ticker { font-family: "JetBrains Mono", monospace; font-size: .78rem; color: var(--ink-3); letter-spacing: .04em; }
+
+    /* Nav — paper pill */
+    .nav-pill { backdrop-filter: blur(14px); background: rgba(250,246,236,0.75); border: 1px solid var(--rule); }
+
+    /* --- NEW EFFECTS --- */
+
+    /* Scroll progress bar — single ochre line, no glow */
+    .scroll-progress { position: fixed; top: 0; left: 0; right: 0; height: 2px; z-index: 100; pointer-events: none; }
+    .scroll-progress > div { height: 100%; background: var(--accent); transition: width .08s linear; }
+
+    /* Pop-in keyframe for gradient word in hero */
+    @keyframes popIn {
+      0% { opacity: 0; transform: translateY(36px) scale(.92); filter: blur(8px); }
+      100% { opacity: 1; transform: none; filter: none; }
+    }
+    .pop-in { animation: popIn 1s cubic-bezier(.2,.9,.3,1.15) .3s both; display: inline-block; }
+
+    /* Tilt container (smooth perspective) */
+    .tilt-wrap { transform-style: preserve-3d; transition: transform .4s cubic-bezier(.2,.7,.2,1); }
+
+    /* Pulse dot for open-to-work */
+    @keyframes softPulse { 0%,100% { opacity: .6; } 50% { opacity: 1; } }
+    .soft-pulse { animation: softPulse 2s ease-in-out infinite; }
+
+    /* Experience row subtle hover */
+    .exp-row { position: relative; }
+    .exp-row::after { content: ""; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background: var(--accent); transition: width .6s cubic-bezier(.2,.7,.2,1); }
+    .exp-row:hover::after { width: 100%; }
+
+    /* ===== TIER-1 POLISH ADDITIONS ===== */
+
+    /* Paper grain — slow subtle breathe */
+    @keyframes grainBreathe { 0%,100% { opacity: 0.45; } 50% { opacity: 0.68; } }
+    .bg-noise::after { animation: grainBreathe 5s ease-in-out infinite; }
+
+    /* Edge vignette — gentle paper shadow at corners (not cinema black) */
+    .vignette::before {
+      content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 2;
+      background: radial-gradient(ellipse at center, transparent 50%, rgba(80,60,30,0.10) 100%);
+    }
+
+    /* Custom cursor — ink ring + ochre dot, multiply blend for paper */
+    .custom-cursor {
+      position: fixed; top: 0; left: 0; pointer-events: none; z-index: 99;
+      width: 28px; height: 28px;
+      margin: -14px 0 0 -14px;
+      border: 1px solid rgba(26,24,21,0.45);
+      border-radius: 50%;
+      transition: width .28s cubic-bezier(.2,.7,.2,1),
+                  height .28s cubic-bezier(.2,.7,.2,1),
+                  margin .28s cubic-bezier(.2,.7,.2,1),
+                  border-color .28s,
+                  background-color .28s,
+                  opacity .2s;
+      will-change: transform;
+    }
+    .custom-cursor-dot {
+      position: fixed; top: 0; left: 0; pointer-events: none; z-index: 100;
+      width: 5px; height: 5px;
+      margin: -2.5px 0 0 -2.5px;
+      background: var(--accent);
+      border-radius: 50%;
+      transition: background-color .25s, transform .15s, width .2s, height .2s, margin .2s;
+      will-change: transform;
+    }
+    html.cursor-hover .custom-cursor {
+      width: 56px; height: 56px;
+      margin: -28px 0 0 -28px;
+      background-color: rgba(184,83,42,0.08);
+      border-color: var(--accent);
+    }
+    html.cursor-hover .custom-cursor-dot {
+      background: var(--ink-1);
+      width: 7px; height: 7px;
+      margin: -3.5px 0 0 -3.5px;
+    }
+
+    /* Logo wall — editorial past-employer list */
+    .logo-mark {
+      position: relative; padding-left: 22px;
+      transition: transform .45s cubic-bezier(.2,.7,.2,1);
+      cursor: default;
+    }
+    .logo-mark:hover { transform: translateX(3px); }
+    .brand-mark-wrap {
+      display: flex;
+      align-items: center;
+      height: 64px;
+      margin-left: -22px;            /* align brand mark to row gutter */
+      margin-bottom: 16px;
+      opacity: 0.92;
+      transition: opacity .45s, transform .45s cubic-bezier(.2,.7,.2,1), filter .45s;
+    }
+    .brand-mark-wrap svg {
+      filter: saturate(0.85);
+      transition: filter .45s, transform .45s;
+    }
+    .logo-mark:hover .brand-mark-wrap {
+      opacity: 1;
+      transform: translateY(-2px);
+    }
+    .logo-mark:hover .brand-mark-wrap svg {
+      filter: saturate(1);
+    }
+    .exp-brand-mark {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      opacity: 0.85;
+      transition: opacity .35s, transform .45s cubic-bezier(.2,.7,.2,1);
+    }
+    .exp-row:hover .exp-brand-mark {
+      opacity: 1;
+      transform: scale(1.08);
+    }
+    .logo-dot {
+      position: absolute; left: 0; top: 90px;        /* sits below brand mark */
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--rule);
+      transition: background-color .45s, transform .45s;
+    }
+    .logo-mark:hover .logo-dot {
+      background: var(--accent, #B8532A);
+      transform: scale(1.25);
+    }
+    .logo-name {
+      font-family: "Space Grotesk", "Inter", sans-serif;
+      font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+      font-weight: 600;
+      color: var(--ink-4);
+      letter-spacing: -0.01em;
+      transition: color .45s;
+    }
+    .logo-mark:hover .logo-name { color: var(--ink-1); }
+    .logo-cn {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.72rem;
+      color: var(--ink-4);
+      margin-top: 4px;
+      letter-spacing: 0.05em;
+      transition: color .45s;
+    }
+    .logo-mark:hover .logo-cn { color: var(--accent, #B8532A); }
+    .logo-period {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.68rem;
+      color: var(--ink-4);
+      margin-top: 6px;
+      letter-spacing: 0.12em;
+    }
+
+    /* Hero constellation canvas — floats behind hero text */
+    .hero-canvas {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      z-index: -5;
+      pointer-events: none;
+      opacity: 1;
+    }
+
+    /* ===== TIER-2 — Award-track polish (editorial version) ===== */
+
+    /* Convergence SVG — 4 narrative-color paths → single ink dot */
+    .converge-svg {
+      width: 100%;
+      height: clamp(70px, 10vw, 130px);
+      display: block;
+      margin: 0 0 1.5rem;
+      overflow: visible;
+    }
+    .converge-path {
+      fill: none;
+      stroke-width: 1.4;
+      stroke-linecap: round;
+      stroke-dasharray: 1;
+      stroke-dashoffset: 1;
+      transition: stroke-dashoffset 1.6s cubic-bezier(.6,.05,.25,1);
+    }
+    .converge-svg.in .converge-path:nth-child(5) { transition-delay: 0s; }
+    .converge-svg.in .converge-path:nth-child(6) { transition-delay: .18s; }
+    .converge-svg.in .converge-path:nth-child(7) { transition-delay: .36s; }
+    .converge-svg.in .converge-path:nth-child(8) { transition-delay: .54s; }
+    .converge-svg.in .converge-path { stroke-dashoffset: 0; }
+    .converge-end {
+      fill: var(--ink-1);
+      opacity: 0;
+      transform-origin: center;
+      transition: opacity .6s 1.1s, transform .6s 1.1s;
+    }
+    .converge-svg.in .converge-end { opacity: 1; }
+    .converge-end-pulse {
+      fill: none;
+      stroke: var(--accent);
+      stroke-width: 1;
+      opacity: 0;
+      transform-origin: 1180px 70px;
+    }
+    .converge-svg.in .converge-end-pulse {
+      animation: pulseRing 2.4s ease-out 1.4s infinite;
+    }
+    @keyframes pulseRing {
+      0% { opacity: .8; transform: scale(.5); }
+      100% { opacity: 0; transform: scale(3); }
+    }
+
+    /* Case-study trigger — ink underline link, ochre on hover */
+    .case-trigger {
+      display: inline-flex; align-items: center; gap: .35rem;
+      margin-top: .8rem;
+      font-family: "JetBrains Mono", monospace;
+      font-size: .72rem;
+      color: var(--ink-1);
+      border-bottom: 1px solid var(--ink-1);
+      padding: 0 0 1px;
+      cursor: pointer;
+      background: none;
+      transition: color .3s, border-color .3s, gap .3s;
+    }
+    .case-trigger:hover { color: var(--accent); border-color: var(--accent); gap: .55rem; }
+
+    /* Modal — paper card on dim warm backdrop */
+    .modal-backdrop {
+      position: fixed; inset: 0; z-index: 200;
+      background: rgba(26,24,21,0.55);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      display: flex; align-items: flex-start; justify-content: center;
+      padding: 4rem 1.25rem 3rem;
+      overflow-y: auto;
+      animation: backdropIn .35s ease-out;
+    }
+    @keyframes backdropIn { from { opacity: 0; } to { opacity: 1; } }
+    .modal-card {
+      position: relative;
+      width: min(960px, 100%);
+      background: var(--paper-hi);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      padding: 2.25rem 2rem 2.5rem;
+      box-shadow: 0 40px 100px -20px rgba(26,24,21,0.45);
+      animation: modalIn .5s cubic-bezier(.2,.8,.2,1);
+    }
+    @keyframes modalIn {
+      from { opacity: 0; transform: translateY(28px) scale(.98); }
+      to   { opacity: 1; transform: none; }
+    }
+    /* Top accent rule — editorial "filed under" */
+    .modal-card::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 8px 8px 0 0;
+    }
+    .modal-close {
+      position: absolute; top: 1rem; right: 1rem;
+      width: 36px; height: 36px;
+      display: inline-flex; align-items: center; justify-content: center;
+      border-radius: 50%;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      color: var(--ink-1);
+      font-family: "JetBrains Mono", monospace; font-size: 1.05rem;
+      cursor: pointer;
+      transition: background .25s, color .25s, border-color .25s, transform .35s;
+    }
+    .modal-close:hover { background: var(--accent); color: var(--paper); border-color: var(--accent); transform: rotate(90deg); }
+    .modal-section { margin-top: 2rem; }
+    .modal-section h4 {
+      font-family: "JetBrains Mono", monospace;
+      font-size: .7rem; font-weight: 500; color: var(--accent);
+      text-transform: uppercase; letter-spacing: .25em;
+      margin-bottom: .9rem;
+    }
+
+    /* RFM heatmap — single-hue ochre scale (paper → deep accent) */
+    .rfm-grid {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 4px;
+      width: 100%; max-width: 320px;
+      aspect-ratio: 1;
+    }
+    .rfm-cell {
+      aspect-ratio: 1;
+      border-radius: 2px;
+      opacity: 0;
+      transform: scale(.6);
+      animation: rfmIn .55s cubic-bezier(.2,.8,.2,1) forwards;
+    }
+    @keyframes rfmIn { to { opacity: 1; transform: none; } }
+    .rfm-axis {
+      font-family: "JetBrains Mono", monospace;
+      font-size: .65rem;
+      color: var(--ink-3);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    /* AOV growth chart — single ochre stroke on paper */
+    .aov-chart { width: 100%; height: 220px; display: block; }
+    .aov-axis { stroke: rgba(26,24,21,0.12); stroke-width: 1; }
+    .aov-grid { stroke: rgba(26,24,21,0.06); stroke-width: 1; }
+    .aov-area { fill: url(#aovArea); opacity: 0; animation: fadeIn 1.2s .4s ease-out forwards; }
+    .aov-line {
+      fill: none;
+      stroke: var(--accent);
+      stroke-width: 2.2;
+      stroke-linecap: round; stroke-linejoin: round;
+      stroke-dasharray: 600;
+      stroke-dashoffset: 600;
+      animation: drawLine 1.6s cubic-bezier(.6,.05,.25,1) forwards;
+    }
+    .aov-point { transform-origin: center; opacity: 0; animation: ptIn .35s ease-out forwards; }
+    @keyframes drawLine { to { stroke-dashoffset: 0; } }
+    @keyframes ptIn { to { opacity: 1; } }
+    @keyframes fadeIn { to { opacity: 1; } }
+
+    /* Reflection card — editorial pull-quote with ochre bar */
+    .reflect-card {
+      position: relative;
+      padding: .85rem 0 .85rem 1.1rem;
+      margin-bottom: .75rem;
+    }
+    .reflect-card::before {
+      content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 2px;
+      background: var(--accent);
+    }
+    .reflect-card h5 {
+      font-family: "Space Grotesk", "PingFang SC", sans-serif;
+      font-weight: 600; color: var(--ink-1); margin-bottom: .25rem;
+      font-size: 1rem;
+    }
+    .reflect-card p { color: var(--ink-2); font-size: .9rem; line-height: 1.65; }
+
+    /* Stat stamp — paper card with ochre digit */
+    .stat-stamp {
+      padding: 1rem 1.25rem;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      background: var(--paper);
+    }
+    .stat-stamp .v {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.8rem; font-weight: 600;
+      color: var(--accent);
+      letter-spacing: -.01em;
+    }
+    .stat-stamp .l {
+      font-family: "JetBrains Mono", monospace;
+      font-size: .65rem; color: var(--ink-3);
+      text-transform: uppercase; letter-spacing: .15em; margin-top: .35rem;
+    }
+
+    /* Photo "initial" fallback — giant ink character on paper */
+    .photo-initial {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700;
+      font-size: clamp(7rem, 16vw, 14rem);
+      line-height: 1;
+      color: var(--ink-1);
+      pointer-events: none;
+      user-select: none;
+      z-index: 3;
+      opacity: 0.15;
+    }
+
+    /* Modal section heading — "filed under" kicker */
+    .case-h {
+      font-family: "JetBrains Mono", monospace;
+      font-size: .72rem; font-weight: 500;
+      color: var(--accent);
+      text-transform: uppercase; letter-spacing: .25em;
+      margin-bottom: .85rem;
+      display: flex; align-items: center; gap: .5rem;
+    }
+    .case-h::before { content: ""; display: inline-block; width: 18px; height: 1px; background: var(--accent); }
+
+    /* Metric stamps — paper card, ochre digit */
+    .metric-stamp {
+      padding: 1rem 1.2rem;
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      background: var(--paper);
+    }
+    .metric-stamp .v {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.85rem; font-weight: 600;
+      color: var(--accent);
+      letter-spacing: -0.01em;
+    }
+    .metric-stamp .l {
+      font-family: "JetBrains Mono", monospace; font-size: .68rem; letter-spacing: .12em;
+      color: var(--ink-3); text-transform: uppercase; margin-top: .25rem;
+    }
+  </style>
+
+  <!-- React + ReactDOM + Babel Standalone -->
+  <!-- React + Babel via jsdelivr (faster from mainland China than unpkg) -->
+  <script crossorigin src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
+  <script crossorigin src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.25.6/babel.min.js"></script>
+</head>
+<body class="font-sans bg-noise vignette overflow-x-hidden">
+
+  <div id="root"></div>
+
+  <!-- ================= CONTENT (EDIT_ME) ================= -->
+  <script type="application/json" id="site-content">
+  {
+    "name":        { "zh": "何嘉禾",                                     "en": "Cameron He" },
+    "handle":      "@cameron",
+    "role":        { "zh": "数据驱动 · 商务探险家",                        "en": "Data-driven · Commercial Explorer" },
+    "locale":      { "zh": "中国·上海",                                   "en": "Shanghai, China" },
+    "email":       "jiahe_he@outlook.com",
+    "resumeUrl":   "./cameron-resume.pdf",
+
+    "hero": {
+      "eyebrow":   { "zh": "// 何嘉禾 Cameron · 2026 届 · 求职中",         "en": "// Cameron He · Class of 2026 · open to work" },
+      "headline":  { "zh": ["我是", "一个探险家", "走在", "路上"],
+                     "en": ["I am", "an explorer", "on", "the road"] },
+      "sub":       { "zh": "上海理工·数据科学在读 · 美团 产品 / eBay 品类 / Museland 内容评测 / 易海创腾 出海营销 四段实习。用数据看清问题，用商务解决问题——把每一段不确定，都走成一次可控的探险。",
+                     "en": "Data Science senior at USST · 4 internships: Meituan PM, eBay category, Museland content + model eval, Yeehai overseas marketing. See with data, solve with commerce — turning each unknown into a controllable expedition." },
+      "ctaPrimary":{ "zh": "说声你好",                                    "en": "Say hi" },
+      "ctaSecondary":{ "zh": "下载简历 PDF",                              "en": "Download résumé PDF" }
+    },
+
+    "stats": [
+      { "num": "4",       "zh": "段实习",                                  "en": "Internships" },
+      { "num": "1万+",    "zh": "POI 标签数据集 · 美团",                    "en": "POI tag dataset · Meituan" },
+      { "num": "18→28%",  "zh": "类目 GMV 增速 · eBay",                    "en": "Category GMV growth · eBay" },
+      { "num": "+30%",    "zh": "官网自然流量 · 易海创腾",                   "en": "Organic traffic · Yeehai" }
+    ],
+
+    "about": {
+      "label":     { "zh": "01 · 关于",                                  "en": "01 · About" },
+      "title":     { "zh": "我是一个探险家。",                             "en": "I am an explorer." },
+      "body":      { "zh": "从易海创腾的 SEO/SEM 与海外社媒，到 Museland 的内容运营 + 模型评测，到 eBay 的智能小家电品类操盘，再到美团的 POI 标签体系建设——四段实习把我推向同一个方向：用数据看清问题，用商务解决问题。MBTI ENTJ，雅思 7 分，一年海外生活，喜欢徒步、爬山、阅读。相信日常也可以是一次探险——只要你愿意拐进那条没走过的街。",
+                     "en": "From Yeehai's SEO/SEM and overseas social, to Museland's content ops + model evaluation, to eBay's smart-appliance category management, to Meituan's POI tag system — four internships pushed me in one direction: see with data, solve with commerce. MBTI ENTJ. IELTS 7. One year abroad. Love hiking, climbing, reading. I believe everyday life can be an expedition too — if you're willing to take the street you've never walked." },
+      "kicker":    { "zh": "目前在 上海 · 开放 出海 / AI 相关 方向机会",
+                     "en": "Based in Shanghai · Open to Overseas / AI-related roles" }
+    },
+
+    "education": {
+      "label":     { "zh": "教育",                                       "en": "Education" },
+      "school":    { "zh": "上海理工大学",                                "en": "Univ. of Shanghai for Science & Technology" },
+      "major":     { "zh": "数据科学与大数据技术 · 学士",                   "en": "B.Sc. Data Science & Big Data Technology" },
+      "period":    "2022.09 – 2026.06",
+      "gpa":       { "zh": "GPA 85/100 · 专业前 30%",                    "en": "GPA 85/100 · Top 30% of major" },
+      "highlights":{ "zh": ["数据库原理与设计 · 99", "机器学习与数据挖掘 · 90", "统计分析技术 · 95"],
+                     "en": ["Database Design · 99", "ML & Data Mining · 90", "Statistical Analysis · 95"] }
+    },
+
+    "experience": {
+      "label":     { "zh": "02 · 实习经历",                               "en": "02 · Experience" },
+      "title":     { "zh": "四段路，一个方向",                             "en": "Four roads, one direction" },
+      "items": [
+        {
+          "year": "2025.04–09",
+          "company": "美团 · Meituan",
+          "zh": { "t":"产品经理 · POI 多维度标签体系",
+                  "d":"服务商分运营，联动业务 + 算法定义 4 类标签（发布意图 / 高信息量 / 去处 / 兴趣 POI）。整合 POI 基础表 + 内容生产表，用 SQL/Python 完成清洗与异常处理，建成 1 万+ POI 标签数据集；撰写监控 PRD 跑通准 / 召 / 精 / 覆四指标看板，推动模型准召率提升至 90%+。" },
+          "en": { "t":"Product manager · multi-dim POI tagging",
+                  "d":"Defined 4 tag families with biz + algo teams: post-intent / high-info / venue / interest-POI. Joined POI master + content tables, cleaned via SQL/Python into a 10k+ POI dataset. Wrote the monitoring PRD covering precision / recall / accuracy / coverage — model precision-recall lifted to 90%+." },
+          "chip": ["PRD", "SQL/Python", "标签体系", "模型评估"]
+        },
+        {
+          "year": "2024.09–2025.04",
+          "company": "eBay · 上海亿贝",
+          "zh": { "t":"品类管理 · 智能小家电",
+                  "d":"与品牌方多轮谈判，锁定全网最低价 + 5% 推广预算支持；策划'冬季取暖节'整合站内外流量。类目 GMV 增速从 18% 跃升至 28%，核心 SKU 转化率 +20%，商家入驻量 +15%。SQL + VBA 自动化周报 / 月报。" },
+          "en": { "t":"Category mgmt · smart appliances",
+                  "d":"Multi-round negotiation securing lowest-price-online + 5% marketing budget. Ran a 'Winter Heating Festival'. Category GMV growth 18 → 28%, SKU conversion +20%, merchant onboarding +15%. SQL + VBA automated reporting." },
+          "chip": ["Category", "谈判", "GMV", "VBA 报表"]
+        },
+        {
+          "year": "2024.03–08",
+          "company": "Museland · 上海逐路行",
+          "zh": { "t":"内容运营 + 模型评测 · AI 角色应用",
+                  "d":"主导产品功能创意打样，策划产品展示与用户案例累计获 600+ 粉丝；优化 App Store / Google Play 的 ASO（标题 / 关键词 / 截图 / 描述）。制定语言模型评估标准（连贯性 / 角色一致性 / 安全合规），完成 10+ 轮模型迭代评测，输出结构化报告推动产品体验提升。" },
+          "en": { "t":"Content ops + model eval · AI character app",
+                  "d":"Led product-feature creative samples and user-case content — gained 600+ followers. Optimized ASO (title / keyword / screenshot / description) on App Store + Google Play. Defined LLM eval criteria (coherence / character consistency / safety) and ran 10+ model iteration cycles with structured reports." },
+          "chip": ["内容运营", "ASO", "模型评测"]
+        },
+        {
+          "year": "2022.12–2023.03",
+          "company": "易海创腾 · Yeehai",
+          "zh": { "t":"出海数字营销 · SEO + SEM + 社媒",
+                  "d":"用 GA + Facebook 互动数据画用户画像，本地化策划 3 篇核心内容（测评 / 用户故事 / 场景指南）+ Canva 设计 6 张海报，测评文章阅读 3000+、海报点击 1200+、社媒粉丝 +20%。同步官网 SEO（标题 / H1 / FAQ 长尾词）+ 加拿大 Google Ads 投放：1 个月后官网 DR +32、核心词进 Google Top 8、自然流量 +30%、SEM 转化 8%。" },
+                  "en": { "t":"Overseas digital marketing · SEO + SEM + social",
+                  "d":"Built audience personas via GA + Facebook signals. Localized 3 hero pieces (review / story / scenario guide) + 6 Canva posters — 3k+ reads, 1.2k+ clicks, +20% social followers. Ran site SEO (title / H1 / long-tail FAQ) + Google Ads to Canada: site DR +32, core keywords into Google Top 8, organic traffic +30%, SEM conversion 8%." },
+          "chip": ["SEO", "SEM", "Google Ads", "GA"]
+        }
+      ]
+    },
+
+    "expertise": {
+      "label":     { "zh": "03 · 能力与直觉",                             "en": "03 · Skills & instincts" },
+      "title":     { "zh": "我在乎的四件事",                               "en": "Four things I care about" },
+      "cards": [
+        { "tag":"01",
+          "zh": { "t":"数据的故事",     "d":"SQL · Python · Tableau · PRD · 模型评估 — 把 1 万+ POI 的原始记录，读成一句话的洞察。" },
+          "en": { "t":"Stories in data","d":"SQL · Python · Tableau · PRD · model evaluation — turning 10k+ POI records into one sentence of insight." } },
+        { "tag":"02",
+          "zh": { "t":"商业的直觉",     "d":"品类 · 谈判 · 大客户 · 定价 — 从 18% 到 28% 的每一个百分点，都要在桌面上谈出来。" },
+          "en": { "t":"Commercial instinct","d":"Category · negotiation · KAM · pricing — every % from 18 to 28 has to be earned at the table." } },
+        { "tag":"03",
+          "zh": { "t":"出海的视角",     "d":"SEO · SEM · Google Ads · GA · 内容本地化 — 让海外用户在搜索结果里第一眼看见你。" },
+          "en": { "t":"Overseas lens",  "d":"SEO · SEM · Google Ads · GA · content localization — being the first thing an overseas user sees in search." } },
+        { "tag":"04",
+          "zh": { "t":"在路上",         "d":"徒步 · 爬山 · 阅读 · 一年海外 · 雅思 7 · ENTJ — 一个把日常过成探险的人。" },
+          "en": { "t":"On the road",    "d":"Hiking · climbing · reading · a year abroad · IELTS 7 · ENTJ — someone who turns the everyday into an expedition." } }
+      ]
+    },
+
+    "marquee":     { "zh": ["SQL","Python","R","Tableau","Spark","Excel · Xlookup","GA","Google Ads","Facebook Ads","SEO","SEM","ASO","Canva","Figma","Axure","墨刀","Xmind","PRD","品类管理","大客户","模型评估","ENTJ","雅思 7","C2 驾照","一年海外","徒步","爬山","阅读"],
+                     "en": ["SQL","Python","R","Tableau","Spark","Excel · Xlookup","GA","Google Ads","Facebook Ads","SEO","SEM","ASO","Canva","Figma","Axure","Mockplus","Xmind","PRD","Category","KAM","Model eval","ENTJ","IELTS 7","C2 license","1 yr abroad","Hiking","Climbing","Reading"] },
+
+    "contact": {
+      "label":     { "zh": "04 · 联系",                                  "en": "04 · Contact" },
+      "title":     { "zh": "下一段路，也许一起走？",                         "en": "Maybe take the next road together?" },
+      "body":      { "zh": "正在找 出海 / AI 相关 方向的机会——商务、客户成功、产品运营、市场都聊。如果我们方向对得上，写封邮件、加个微信、或者打个电话，随时。",
+                     "en": "Open to Overseas / AI-related roles — business, customer success, product ops, marketing. If we're heading the same way: email, WeChat, or a call, anytime." },
+      "cta":       { "zh": "写封邮件",                                    "en": "Send an email" },
+      "socials": [
+        { "label":"WeChat · 15574915376",     "copy":"15574915376" },
+        { "label":"+86 155 7491 5376",        "href":"tel:+8615574915376" },
+        { "label":"Résumé · PDF ↓",           "href":"./cameron-resume.pdf" }
+      ]
+    },
+
+    "footer":      { "zh": "© 2026 何嘉禾 · 一步一步走",                   "en": "© 2026 Cameron He · One step at a time" }
+  }
+  </script>
+  <!-- ================= END CONTENT ================= -->
+
+  <!-- React app -->
+  <script type="text/babel" data-presets="react">
+    const { useState, useEffect, useRef, useMemo } = React;
+    const CONTENT = JSON.parse(document.getElementById('site-content').textContent);
+
+    // Helper: pull localized string from a field that may be { zh, en } or a plain string
+    const loc = (v, lang) => (v && typeof v === 'object' && 'zh' in v) ? v[lang] : v;
+
+    // ——— Scroll progress bar (thin gradient at top of viewport) ———
+    function ScrollProgress() {
+      const [p, setP] = useState(0);
+      useEffect(() => {
+        const update = () => {
+          const h = document.documentElement;
+          const max = h.scrollHeight - h.clientHeight;
+          setP(max > 0 ? (h.scrollTop / max) * 100 : 0);
+        };
+        window.addEventListener('scroll', update, { passive: true });
+        update();
+        return () => window.removeEventListener('scroll', update);
+      }, []);
+      return <div className="scroll-progress"><div style={{ width: `${p}%` }} /></div>;
+    }
+
+    // ——— Animated number counter (parses "+15%", "1万+", "4", "28%", "∞" etc.) ———
+    function Counter({ value, className = "" }) {
+      const match = String(value).match(/^([^\d]*)(\d+(?:\.\d+)?)(.*)$/);
+      const initial = match ? (match[1] + '0' + match[3]) : String(value);
+      const [display, setDisplay] = useState(initial);
+      const ref = useRef(null);
+      useEffect(() => {
+        if (!match) { setDisplay(String(value)); return; }
+        const el = ref.current; if (!el) return;
+        const [, prefix, numStr, suffix] = match;
+        const target = parseFloat(numStr);
+        const isInt = Number.isInteger(target);
+        const io = new IntersectionObserver(([e]) => {
+          if (e.isIntersecting) {
+            io.disconnect();
+            const t0 = performance.now();
+            const dur = 1600;
+            const tick = (now) => {
+              const t = Math.min(1, (now - t0) / dur);
+              const eased = 1 - Math.pow(1 - t, 3);
+              const curr = target * eased;
+              setDisplay(prefix + (isInt ? Math.round(curr) : curr.toFixed(1)) + suffix);
+              if (t < 1) requestAnimationFrame(tick);
+            };
+            requestAnimationFrame(tick);
+          }
+        }, { threshold: 0.4 });
+        io.observe(el);
+        return () => io.disconnect();
+      }, [value]);
+      return <span ref={ref} className={className}>{display}</span>;
+    }
+
+    // ——— Magnetic wrapper (subtle attraction on hover) ———
+    function Magnetic({ children, strength = 0.25 }) {
+      const ref = useRef(null);
+      const onMove = (e) => {
+        if (matchMedia('(pointer: coarse)').matches) return;
+        const el = ref.current; if (!el) return;
+        const r = el.getBoundingClientRect();
+        const x = (e.clientX - r.left - r.width / 2) * strength;
+        const y = (e.clientY - r.top - r.height / 2) * strength;
+        el.style.transform = `translate(${x}px, ${y}px)`;
+      };
+      const onLeave = () => { if (ref.current) ref.current.style.transform = ''; };
+      return (
+        <span ref={ref} onMouseMove={onMove} onMouseLeave={onLeave}
+              className="inline-block will-change-transform"
+              style={{ transition: 'transform .3s cubic-bezier(.2,.7,.2,1)' }}>
+          {children}
+        </span>
+      );
+    }
+
+    // ——— Tilt wrapper (3D perspective on mouse) ———
+    function Tilt({ children, max = 6, className = "" }) {
+      const ref = useRef(null);
+      const onMove = (e) => {
+        if (matchMedia('(pointer: coarse)').matches) return;
+        const el = ref.current; if (!el) return;
+        const r = el.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5;
+        const y = (e.clientY - r.top) / r.height - 0.5;
+        el.style.transform = `perspective(1200px) rotateX(${-y * max}deg) rotateY(${x * max}deg)`;
+      };
+      const onLeave = () => { if (ref.current) ref.current.style.transform = ''; };
+      return (
+        <div ref={ref} onMouseMove={onMove} onMouseLeave={onLeave}
+             className={"tilt-wrap " + className}>
+          {children}
+        </div>
+      );
+    }
+
+    // ——— Cursor glow (desktop) ———
+    function CursorGlow() {
+      const ref = useRef(null);
+      useEffect(() => {
+        if (matchMedia('(pointer: coarse)').matches) return;
+        const el = ref.current; if (!el) return;
+        const move = e => {
+          el.style.left = e.clientX + 'px';
+          el.style.top  = e.clientY + 'px';
+        };
+        window.addEventListener('pointermove', move);
+        return () => window.removeEventListener('pointermove', move);
+      }, []);
+      return <div ref={ref} className="cursor-glow hidden md:block" />;
+    }
+
+    // ——— Custom cursor — small ring (lerps) + precise dot (1:1) + hover state ———
+    function CustomCursor() {
+      const ringRef = useRef(null);
+      const dotRef  = useRef(null);
+      useEffect(() => {
+        if (matchMedia('(pointer: coarse)').matches) return;
+        let mx = -100, my = -100, rx = -100, ry = -100, raf;
+        const move = e => {
+          mx = e.clientX; my = e.clientY;
+          if (dotRef.current) dotRef.current.style.transform = `translate(${mx}px, ${my}px)`;
+        };
+        const tick = () => {
+          rx += (mx - rx) * 0.18;
+          ry += (my - ry) * 0.18;
+          if (ringRef.current) ringRef.current.style.transform = `translate(${rx}px, ${ry}px)`;
+          raf = requestAnimationFrame(tick);
+        };
+        const onOver = e => {
+          const t = e.target.closest && e.target.closest('a, button, [data-cursor="hover"]');
+          document.documentElement.classList.toggle('cursor-hover', !!t);
+        };
+        window.addEventListener('pointermove', move);
+        window.addEventListener('pointerover', onOver);
+        raf = requestAnimationFrame(tick);
+        return () => {
+          window.removeEventListener('pointermove', move);
+          window.removeEventListener('pointerover', onOver);
+          cancelAnimationFrame(raf);
+          document.documentElement.classList.remove('cursor-hover');
+        };
+      }, []);
+      return (
+        <>
+          <div ref={ringRef} className="custom-cursor hidden md:block" />
+          <div ref={dotRef}  className="custom-cursor-dot hidden md:block" />
+        </>
+      );
+    }
+
+    // ——— Hero constellation — Canvas 2D star/connection field, cursor-reactive ———
+    function HeroCanvas() {
+      const ref = useRef(null);
+      useEffect(() => {
+        const canvas = ref.current; if (!canvas) return;
+        const ctx = canvas.getContext('2d', { alpha: true });
+        const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+        let w = 0, h = 0, dpr = 1;
+        let mx = -9999, my = -9999;
+        let particles = [];
+        let raf = 0;
+        let active = true;
+
+        // editorial palette stops: ink → ochre → amber → navy → olive
+        // produces subtle graphite/spice pinpricks on paper, not neon
+        const C = [
+          [26, 24, 21],    // ink
+          [139, 74, 42],   // deep accent
+          [184, 83, 42],   // accent ochre
+          [184, 145, 65], // amber (yeehai)
+          [46, 91, 126],  // navy (ebay)
+          [76, 107, 61],  // olive (ai startup)
+        ];
+        const lerp = (t) => {
+          const s = Math.max(0, Math.min(1, t)) * (C.length - 1);
+          const i = Math.floor(s);
+          const f = s - i;
+          const a = C[i], b = C[Math.min(C.length - 1, i + 1)];
+          return [a[0]+(b[0]-a[0])*f, a[1]+(b[1]-a[1])*f, a[2]+(b[2]-a[2])*f];
+        };
+
+        const resize = () => {
+          dpr = Math.min(window.devicePixelRatio || 1, 2);
+          w = canvas.clientWidth;
+          h = canvas.clientHeight;
+          if (w === 0 || h === 0) return;
+          canvas.width = Math.floor(w * dpr);
+          canvas.height = Math.floor(h * dpr);
+          ctx.setTransform(1,0,0,1,0,0);
+          ctx.scale(dpr, dpr);
+        };
+        const init = () => {
+          if (w === 0 || h === 0) return;
+          // density: ~1 particle per 6500 px², capped at 220 for perf
+          const count = Math.max(80, Math.min(220, Math.floor((w * h) / 6500)));
+          particles = Array.from({ length: count }, () => ({
+            x: Math.random() * w,
+            y: Math.random() * h,
+            z: 0.3 + Math.random() * 0.7,           // depth (0..1) for parallax + size
+            r: 0.8 + Math.random() * 1.3,           // base radius — smaller on paper
+            hue: Math.random(),                     // 0..1 maps along editorial palette
+            ph: Math.random() * Math.PI * 2,        // twinkle phase
+            sp: 0.004 + Math.random() * 0.010,      // twinkle speed (slower = calmer)
+            vx: (Math.random() - 0.5) * 0.06,       // drift x
+            vy: (Math.random() - 0.5) * 0.06,       // drift y
+          }));
+        };
+
+        const tick = () => {
+          if (!active || w === 0 || h === 0) { raf = requestAnimationFrame(tick); return; }
+          ctx.clearRect(0, 0, w, h);
+          // gentle parallax offset based on cursor
+          const parX = mx > -9000 ? (mx - w / 2) / w * 18 : 0;
+          const parY = my > -9000 ? (my - h / 2) / h * 18 : 0;
+
+          const pts = new Array(particles.length);
+          for (let i = 0; i < particles.length; i++) {
+            const p = particles[i];
+            if (!reduceMotion) {
+              p.x += p.vx; p.y += p.vy;
+              if (p.x < -20) p.x = w + 20; else if (p.x > w + 20) p.x = -20;
+              if (p.y < -20) p.y = h + 20; else if (p.y > h + 20) p.y = -20;
+              p.ph += p.sp;
+            }
+            const px = p.x + parX * p.z;
+            const py = p.y + parY * p.z;
+            pts[i] = [px, py, p];
+            const dx = px - mx, dy = py - my;
+            const d = Math.hypot(dx, dy);
+            const near = d < 240 ? 1 - d / 240 : 0;
+            const tw = 0.6 + 0.4 * Math.abs(Math.sin(p.ph));
+            const a = tw * (0.30 + p.z * 0.28) + near * 0.45;  // gentler alpha on paper
+            const [r, g, b] = lerp(p.hue);
+            const radius = p.r * (1 + near * 1.2);
+            // soft ink halo for every particle — small, subtle, no glow
+            const haloR = radius * (2.5 + near * 2.5);
+            const haloA = (0.03 + p.z * 0.03) + near * 0.10;
+            const grd = ctx.createRadialGradient(px, py, 0, px, py, haloR);
+            grd.addColorStop(0, `rgba(${r|0},${g|0},${b|0},${haloA})`);
+            grd.addColorStop(1, 'rgba(0,0,0,0)');
+            ctx.fillStyle = grd;
+            ctx.fillRect(px - haloR, py - haloR, haloR*2, haloR*2);
+            // core
+            ctx.beginPath();
+            ctx.arc(px, py, radius, 0, 6.28318);
+            ctx.fillStyle = `rgba(${r|0},${g|0},${b|0},${Math.min(0.8, a)})`;
+            ctx.fill();
+          }
+
+          // constellation lines — hairlines in ink, barely there
+          ctx.lineWidth = 0.6;
+          const MAX = 130, MAX2 = MAX * MAX;
+          for (let i = 0; i < pts.length; i++) {
+            const [x1, y1] = pts[i];
+            for (let j = i + 1; j < pts.length; j++) {
+              const [x2, y2] = pts[j];
+              const dx = x2 - x1, dy = y2 - y1;
+              const d2 = dx*dx + dy*dy;
+              if (d2 < MAX2) {
+                const d = Math.sqrt(d2);
+                const baseA = (1 - d / MAX) * 0.18;
+                // boost lines near cursor
+                const cx = (x1 + x2) / 2, cy = (y1 + y2) / 2;
+                const cd = Math.hypot(cx - mx, cy - my);
+                const boost = cd < 240 ? (1 - cd / 240) * 0.25 : 0;
+                const a = baseA + boost;
+                ctx.strokeStyle = `rgba(26,24,21,${a})`;  // ink hairline
+                ctx.beginPath();
+                ctx.moveTo(x1, y1);
+                ctx.lineTo(x2, y2);
+                ctx.stroke();
+              }
+            }
+          }
+
+          raf = requestAnimationFrame(tick);
+        };
+
+        const onMove = (e) => {
+          const r = canvas.getBoundingClientRect();
+          mx = e.clientX - r.left;
+          my = e.clientY - r.top;
+        };
+        const onLeave = () => { mx = -9999; my = -9999; };
+
+        const io = new IntersectionObserver(([e]) => { active = e.isIntersecting; }, { threshold: 0 });
+        io.observe(canvas);
+
+        resize(); init();
+        const onResize = () => { resize(); init(); };
+        window.addEventListener('resize', onResize);
+        window.addEventListener('pointermove', onMove);
+        window.addEventListener('pointerleave', onLeave);
+        raf = requestAnimationFrame(tick);
+
+        return () => {
+          cancelAnimationFrame(raf);
+          window.removeEventListener('resize', onResize);
+          window.removeEventListener('pointermove', onMove);
+          window.removeEventListener('pointerleave', onLeave);
+          io.disconnect();
+        };
+      }, []);
+      return <canvas ref={ref} className="hero-canvas" />;
+    }
+
+    // ——— Convergence SVG — 4 brand-color paths drawing in to one point ———
+    function ConvergenceLines() {
+      const ref = useRef(null);
+      useEffect(() => {
+        const el = ref.current; if (!el) return;
+        const io = new IntersectionObserver(([e]) => {
+          if (e.isIntersecting) { el.classList.add('in'); io.disconnect(); }
+        }, { threshold: 0.35 });
+        io.observe(el);
+        return () => io.disconnect();
+      }, []);
+      return (
+        <svg ref={ref} className="converge-svg" viewBox="0 0 1200 140" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            {/* 4 narrative chapter colors, top → bottom = Meituan / eBay / AI startup / Yeehai */}
+            <linearGradient id="cg1" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%"   stopColor="#B8532A" stopOpacity="0" />
+              <stop offset="12%"  stopColor="#B8532A" stopOpacity=".85" />
+              <stop offset="100%" stopColor="#1A1815" stopOpacity=".95" />
+            </linearGradient>
+            <linearGradient id="cg2" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%"   stopColor="#2E5B7E" stopOpacity="0" />
+              <stop offset="12%"  stopColor="#2E5B7E" stopOpacity=".85" />
+              <stop offset="100%" stopColor="#1A1815" stopOpacity=".95" />
+            </linearGradient>
+            <linearGradient id="cg3" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%"   stopColor="#4C6B3D" stopOpacity="0" />
+              <stop offset="12%"  stopColor="#4C6B3D" stopOpacity=".85" />
+              <stop offset="100%" stopColor="#1A1815" stopOpacity=".95" />
+            </linearGradient>
+            <linearGradient id="cg4" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%"   stopColor="#B89141" stopOpacity="0" />
+              <stop offset="12%"  stopColor="#B89141" stopOpacity=".85" />
+              <stop offset="100%" stopColor="#1A1815" stopOpacity=".95" />
+            </linearGradient>
+          </defs>
+          {/* faint axis dots at left for each starting point */}
+          <circle cx="0" cy="14"  r="3" fill="#B8532A" opacity=".7" />
+          <circle cx="0" cy="50"  r="3" fill="#2E5B7E" opacity=".7" />
+          <circle cx="0" cy="90"  r="3" fill="#4C6B3D" opacity=".7" />
+          <circle cx="0" cy="130" r="3" fill="#B89141" opacity=".7" />
+          {/* 4 converging paths */}
+          <path className="converge-path" stroke="url(#cg1)" pathLength="1" d="M 0 14  C 500 14,  900 14,  1180 70" />
+          <path className="converge-path" stroke="url(#cg2)" pathLength="1" d="M 0 50  C 500 50,  900 50,  1180 70" />
+          <path className="converge-path" stroke="url(#cg3)" pathLength="1" d="M 0 90  C 500 90,  900 90,  1180 70" />
+          <path className="converge-path" stroke="url(#cg4)" pathLength="1" d="M 0 130 C 500 130, 900 130, 1180 70" />
+          {/* convergence end-point + pulse */}
+          <circle className="converge-end-pulse" cx="1180" cy="70" r="6" />
+          <circle className="converge-end" cx="1180" cy="70" r="5" />
+        </svg>
+      );
+    }
+
+    // ——— RFM 8x8 heatmap mockup — single-hue ochre scale (academic data-viz) ———
+    function RfmGrid() {
+      // Generate 64 cells. Score = recency+frequency mapped to a single ochre intensity.
+      const cells = [];
+      for (let r = 0; r < 8; r++) {
+        for (let f = 0; f < 8; f++) {
+          const noise = (Math.sin(r * 2.3 + f * 1.7) + 1) / 2 * 0.25;
+          const score = Math.min(1, ((r + f) / 14) * 0.85 + noise);
+          // Single-hue ochre ramp: paper (low) → deep accent (high)
+          // interpolate between paper #E6DFCE and accent-lo #8F3E1E
+          const R = 230 - score * (230 - 143); // 230 → 143
+          const G = 223 - score * (223 - 62);  // 223 → 62
+          const B = 206 - score * (206 - 30);  // 206 → 30
+          const alpha = 0.35 + score * 0.60;
+          cells.push({
+            color: `rgba(${R|0}, ${G|0}, ${B|0}, ${alpha})`,
+            delay: (r + f) * 35
+          });
+        }
+      }
+      return (
+        <div className="flex gap-6 flex-wrap items-center">
+          <div className="rfm-grid">
+            {cells.map((c, i) => (
+              <div key={i} className="rfm-cell"
+                   style={{ background: c.color, animationDelay: `${c.delay}ms` }} />
+            ))}
+          </div>
+          <div className="flex-1 min-w-[220px] max-w-[320px]">
+            <div className="rfm-axis mb-3">x: 标签置信度 · y: 覆盖率</div>
+            <div className="space-y-2 font-mono text-xs">
+              <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-sm" style={{background:'rgba(230,223,206,.8)', border:'1px solid rgba(26,24,21,.12)'}} /><span className="text-fog-300">发布意图 / Post-intent</span></div>
+              <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-sm" style={{background:'rgba(204,175,130,.85)'}} /><span className="text-fog-300">高信息量 / High-info</span></div>
+              <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-sm" style={{background:'rgba(184,117,70,.9)'}} /><span className="text-fog-300">去处 / Venue</span></div>
+              <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-sm" style={{background:'rgba(165,87,48,.95)'}} /><span className="text-fog-300">兴趣 POI / Interest-POI</span></div>
+              <div className="flex items-center gap-2"><span className="w-3 h-3 rounded-sm" style={{background:'rgba(143,62,30,1)'}} /><span className="text-fog-300">高置信样本 / Gold</span></div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // ——— AOV growth chart (SVG line chart) ———
+    function AovChart({ lang }) {
+      // Normalized data — 6 months across, AOV index (lower y = higher AOV due to SVG inversion)
+      // Pre-rollout flat-ish; post-rollout +15% step
+      const pts = [
+        { x: 60,  y: 150, label: 'v0' },
+        { x: 180, y: 145, label: 'v1' },
+        { x: 300, y: 130, label: 'v2' },
+        { x: 420, y: 110, label: 'v3', accent: true },
+        { x: 540, y:  85, label: 'v4' },
+        { x: 660, y:  72, label: 'v5' },
+        { x: 780, y:  60, label: 'v6' },
+      ];
+      const linePath = pts.reduce((acc, p, i) => acc + (i === 0 ? `M ${p.x} ${p.y}` : ` L ${p.x} ${p.y}`), '');
+      const areaPath = linePath + ` L ${pts[pts.length-1].x} 200 L ${pts[0].x} 200 Z`;
+      return (
+        <svg className="aov-chart" viewBox="0 0 840 220" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="aovArea" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"   stopColor="#B8532A" stopOpacity=".22" />
+              <stop offset="100%" stopColor="#B8532A" stopOpacity="0" />
+            </linearGradient>
+          </defs>
+          {/* horizontal grid */}
+          {[40, 80, 120, 160, 200].map(y => (
+            <line key={y} className="aov-grid" x1="40" x2="820" y1={y} y2={y} />
+          ))}
+          {/* axes */}
+          <line className="aov-axis" x1="40" x2="40" y1="20" y2="200" />
+          <line className="aov-axis" x1="40" x2="820" y1="200" y2="200" />
+          {/* launch marker — dashed ink hairline */}
+          <line x1="420" x2="420" y1="20" y2="200" stroke="rgba(26,24,21,.35)" strokeDasharray="3 4" />
+          <text x="425" y="35" fill="#B8532A" fontFamily="JetBrains Mono" fontSize="11" letterSpacing="2">{lang === 'zh' ? '看板上线' : 'dashboard'}</text>
+          {/* area under curve */}
+          <path className="aov-area" d={areaPath} />
+          {/* line — solid ochre, no gradient */}
+          <path className="aov-line" d={linePath} />
+          {/* points — filled ink, accent = ochre (no glow) */}
+          {pts.map((p, i) => (
+            <g key={i} className="aov-point" style={{animationDelay: `${600 + i * 130}ms`}}>
+              <circle cx={p.x} cy={p.y} r={p.accent ? 5 : 3.5}
+                      fill={p.accent ? '#B8532A' : '#1A1815'}
+                      stroke={p.accent ? '#F2EDE2' : 'none'}
+                      strokeWidth={p.accent ? 2 : 0} />
+              <text x={p.x} y="218" textAnchor="middle"
+                    fill="#6B6555" fontFamily="JetBrains Mono" fontSize="10">{p.label}</text>
+            </g>
+          ))}
+          {/* +15% callout */}
+          <g className="aov-point" style={{animationDelay: '1500ms'}}>
+            <text x="700" y="50" fill="#B8532A" fontFamily="Space Grotesk" fontSize="22" fontWeight="600">90%+</text>
+            <text x="700" y="68" fill="#6B6555" fontFamily="JetBrains Mono" fontSize="10" letterSpacing="2">{lang === 'zh' ? '准召率 / P-R' : 'PRECISION-RECALL'}</text>
+          </g>
+        </svg>
+      );
+    }
+
+    // ——— Case Study Modal — Meituan deep-dive (RFM + AOV + reflections) ———
+    const CASES = {
+      meituan: {
+        zh: {
+          title: '美团 · POI 多维度标签体系 · 商分运营',
+          period: '2025.04 — 2025.09  ·  产品 + 数据实习',
+          chips: ['PRD', 'SQL/Python', '标签体系', '模型评估'],
+          problem:  '商分运营团队要从 1 万+ POI 与海量内容里帮用户"发现好去处"。但旧标签零散、定义不清——业务难拍板、算法难训练，关键指标长期卡在 70% 左右上不去。',
+          approach: '联动业务 + 算法定义 4 类标签（发布意图 / 高信息量 / 去处 / 兴趣 POI），输出标准化定义文档。整合 POI 基础信息表 + 内容生产表，用 SQL/Python 完成分类、冗余清洗、缺失值与异常处理，建成 1 万+ POI 标签数据集；撰写监控 PRD，实现"准 / 召 / 精 / 覆"四指标全生命周期看板，未达标时主动排查并联动算法团队重训。',
+          metrics:  [
+            { v: '1万+', l: 'POI 标签数据集' },
+            { v: '90%+', l: '模型准召率' },
+            { v: '4 类', l: '标签体系上线' }
+          ],
+          chartCaption: '随着每一轮"问题样本回灌 → 重训 → 看板复盘"的迭代，模型核心指标从 70% 稳步爬升至 90%+。',
+          reflectsLabel: '我从这段实习里学到的',
+          reflects: [
+            { t: 'PRD 不是写给自己看的', d: '跨团队对齐时，"业务可执行的定义"比"完美的体系"更重要。一句"高信息量 = 文案 ≥ 30 字 + 至少 1 张图 + 含品类词"——比 1 页玄学描述好用 10 倍。' },
+            { t: '数据清洗 ≠ 工程脏活', d: '每一次缺失值的处理选择，都在影响下游模型对哪类用户更敏感。把"先占位再回灌"这件事讲清楚的人，决定了模型上线后召回偏向哪一类内容。' },
+            { t: '监控看板让"问题"按小时计', d: '准召掉了，过去靠季度复盘。看板上线后，BD 同学早 10 点就能看到"昨天新流入 POI 的兴趣标签覆盖只有 62%"——问题在小时级被发现，而不是季度级被复盘。' }
+          ],
+          closeHint: 'ESC 关闭'
+        },
+        en: {
+          title: 'Meituan · Multi-dim POI Tagging · Discovery Ops',
+          period: '2025.04 — 2025.09 · Product + Data intern',
+          chips: ['PRD', 'SQL/Python', 'Tagging system', 'Model evaluation'],
+          problem:  "The discovery-ops team had to surface 'great places' from 10k+ POIs and millions of pieces of UGC. The old tags were fragmented and ill-defined — biz couldn't decide, algo couldn't train. Core metrics had been stuck near 70%.",
+          approach: 'Worked with biz + algo to define 4 tag families: post-intent / high-info / venue / interest-POI, with standardized definition docs. Joined POI master + content tables; used SQL / Python to classify, dedupe, and handle missing / outlier values into a 10k+ POI labeled dataset. Wrote the monitoring PRD covering precision / recall / accuracy / coverage with full-lifecycle dashboards — surfacing issues early and triggering algo retraining loops.',
+          metrics:  [
+            { v: '10k+', l: 'POI labeled dataset' },
+            { v: '90%+', l: 'Model precision-recall' },
+            { v: '4', l: 'Tag families shipped' }
+          ],
+          chartCaption: 'Each "problem-sample reflux → retrain → dashboard review" cycle pushed core metrics from 70% steadily up past 90%.',
+          reflectsLabel: 'What this internship taught me',
+          reflects: [
+            { t: 'A PRD is not written for yourself', d: "When aligning across teams, an 'executable definition' beats a 'perfect framework'. One line — 'high-info = ≥30 chars + ≥1 image + category keyword' — beats a page of vague taxonomy 10×." },
+            { t: 'Data cleaning ≠ janitor work', d: 'Each missing-value choice shapes which user segment the downstream model becomes more sensitive to. Whoever can articulate the "placeholder-now, backfill-later" call effectively decides what kind of content the model favors.' },
+            { t: 'Dashboards turn issues hourly', d: "Precision-recall dips used to surface in quarterly reviews. With the dashboard live, BD could see by 10am that 'newly-arrived POIs only have 62% interest-tag coverage' — issues surface in hours, not quarters." }
+          ],
+          closeHint: 'press ESC to close'
+        }
+      }
+    };
+
+    function CaseStudyModal({ caseId, onClose, lang }) {
+      useEffect(() => {
+        if (!caseId) return;
+        const onKey = e => { if (e.key === 'Escape') onClose(); };
+        document.addEventListener('keydown', onKey);
+        const prev = document.body.style.overflow;
+        document.body.style.overflow = 'hidden';
+        return () => {
+          document.removeEventListener('keydown', onKey);
+          document.body.style.overflow = prev;
+        };
+      }, [caseId, onClose]);
+      if (!caseId) return null;
+      const c = CASES[caseId][lang];
+      return (
+        <div className="modal-backdrop" onClick={onClose}>
+          <div className="modal-card" onClick={e => e.stopPropagation()}>
+            <button className="modal-close" onClick={onClose} aria-label="close">×</button>
+
+            {/* header */}
+            <div className="font-mono text-[11px] uppercase tracking-[0.25em] text-neon-cyan/80 mb-3">// case study · 01</div>
+            <h3 className="font-display text-3xl md:text-4xl font-semibold tracking-tight">{c.title}</h3>
+            <div className="font-mono text-xs text-fog-500 mt-2">{c.period}</div>
+            <div className="flex flex-wrap gap-2 mt-4">
+              {c.chips.map((x, i) => (
+                <span key={i} className="font-mono text-[11px] px-2.5 py-1 rounded-full border border-ink-700 text-fog-300">{x}</span>
+              ))}
+            </div>
+
+            {/* problem */}
+            <div className="modal-section">
+              <h4>{lang === 'zh' ? '问题 / Problem' : 'Problem'}</h4>
+              <p className="text-fog-300 text-base leading-relaxed">{c.problem}</p>
+            </div>
+
+            {/* approach + tag-confidence grid */}
+            <div className="modal-section">
+              <h4>{lang === 'zh' ? '方法 / 标签体系 + 监控' : 'Approach / Tag system + monitoring'}</h4>
+              <p className="text-fog-300 text-base leading-relaxed mb-5">{c.approach}</p>
+              <RfmGrid />
+            </div>
+
+            {/* result chart */}
+            <div className="modal-section">
+              <h4>{lang === 'zh' ? '结果 / 模型迭代准召率' : 'Result / Iterative precision-recall'}</h4>
+              <AovChart lang={lang} />
+              <p className="text-fog-500 text-xs italic mt-3">{c.chartCaption}</p>
+              <div className="grid grid-cols-3 gap-3 mt-5">
+                {c.metrics.map((m, i) => (
+                  <div key={i} className="stat-stamp">
+                    <div className="v">{m.v}</div>
+                    <div className="l">{m.l}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* reflections */}
+            <div className="modal-section">
+              <h4>{c.reflectsLabel}</h4>
+              {c.reflects.map((r, i) => (
+                <div key={i} className="reflect-card">
+                  <h5>{i + 1}. {r.t}</h5>
+                  <p>{r.d}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 font-mono text-[10px] text-fog-500 uppercase tracking-[0.2em] text-right">{c.closeHint}</div>
+          </div>
+        </div>
+      );
+    }
+
+    // ——— Brand marks (inline SVG, narrative-color tinted) ———
+    // Each mark is a stylized monogram in the company's narrative color.
+    // size: visual side length in px. Color inherits from currentColor.
+    function BrandMark({ name, size = 48 }) {
+      const sw = 2.4;
+      const marks = {
+        Meituan: (
+          // ochre filled rounded square + 3 paper-color "team rowing" arcs
+          <svg viewBox="0 0 48 48" width={size} height={size} aria-label="Meituan">
+            <rect x="2" y="2" width="44" height="44" rx="11" fill="currentColor" />
+            <path d="M 11 17 Q 24 10 37 17" stroke="#F2EDE2" strokeWidth={sw} strokeLinecap="round" fill="none" />
+            <path d="M 11 25 Q 24 18 37 25" stroke="#F2EDE2" strokeWidth={sw} strokeLinecap="round" fill="none" />
+            <path d="M 11 33 Q 24 26 37 33" stroke="#F2EDE2" strokeWidth={sw} strokeLinecap="round" fill="none" />
+          </svg>
+        ),
+        eBay: (
+          // Iconic lowercase italic wordmark — tightly tracked
+          <svg viewBox="0 0 96 48" width={size * 96 / 48} height={size} aria-label="eBay">
+            <text x="0" y="38" fontFamily="'Space Grotesk', 'Inter', sans-serif"
+                  fontStyle="italic" fontWeight="800" fontSize="42" letterSpacing="-3"
+                  fill="currentColor">eBay</text>
+          </svg>
+        ),
+        Museland: (
+          // outlined rounded square + bold lowercase 'm' monogram (muse / character)
+          <svg viewBox="0 0 48 48" width={size} height={size} aria-label="Museland">
+            <rect x="2" y="2" width="44" height="44" rx="11" fill="none" stroke="currentColor" strokeWidth="2" />
+            <text x="24" y="36" textAnchor="middle"
+                  fontFamily="'Space Grotesk', 'Inter', sans-serif"
+                  fontWeight="800" fontSize="32" fill="currentColor"
+                  letterSpacing="-1">m</text>
+            <circle cx="33" cy="14" r="2" fill="currentColor" />
+          </svg>
+        ),
+        Yeehai: (
+          // gold filled circle + 易 character (易海创腾)
+          <svg viewBox="0 0 48 48" width={size} height={size} aria-label="Yeehai">
+            <circle cx="24" cy="24" r="22" fill="currentColor" />
+            <text x="24" y="32" textAnchor="middle"
+                  fontFamily="'PingFang SC', 'Source Han Sans SC', sans-serif"
+                  fontWeight="700" fontSize="24" fill="#F2EDE2">易</text>
+          </svg>
+        ),
+      };
+      return marks[name] || null;
+    }
+
+    // ——— Logo wall — past employer logos in editorial layout ———
+    function LogoWall({ lang }) {
+      const items = [
+        { mark: 'Meituan',  cn: '美团',         accent: '#B8532A', period: '2025 · 标签 PM' },
+        { mark: 'eBay',     cn: '上海亿贝',      accent: '#2E5B7E', period: '2024–25 · 品类' },
+        { mark: 'Museland', cn: '逐路行',        accent: '#4C6B3D', period: '2024 · 内容评测' },
+        { mark: 'Yeehai',   cn: '易海创腾',      accent: '#B89141', period: '2022–23 · SEO/SEM' },
+      ];
+      const heading = lang === 'zh' ? '过去四年我跟过的团队' : 'Teams I have ridden with';
+      return (
+        <section className="relative py-14 md:py-20 border-y border-ink-700/40 bg-ink-900/60">
+          <div className="mx-auto max-w-[1200px] px-6 md:px-10">
+            <Reveal>
+              <div className="font-mono text-[11px] uppercase tracking-[0.3em] text-fog-500 mb-10 flex items-center">
+                <span className="inline-block w-7 h-px bg-fog-500 mr-3" />
+                {heading}
+              </div>
+            </Reveal>
+            <Reveal delay={80}>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10">
+                {items.map((l, i) => (
+                  <div key={i} className="logo-mark" style={{ '--accent': l.accent, color: l.accent }} data-cursor="hover">
+                    <div className="brand-mark-wrap">
+                      <BrandMark name={l.mark} size={56} />
+                    </div>
+                    <div className="logo-dot" />
+                    <div className="logo-name">{l.mark}</div>
+                    <div className="logo-cn">{l.cn}</div>
+                    <div className="logo-period">{l.period}</div>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      );
+    }
+
+    // ——— Reveal on scroll ———
+    function Reveal({ children, delay = 0, className = "" }) {
+      const ref = useRef(null);
+      useEffect(() => {
+        const el = ref.current; if (!el) return;
+        const io = new IntersectionObserver(
+          ([e]) => { if (e.isIntersecting) { el.classList.add('in'); io.disconnect(); } },
+          { threshold: 0.12 }
+        );
+        io.observe(el);
+        return () => io.disconnect();
+      }, []);
+      return (
+        <div ref={ref} className={"reveal " + className} style={{ transitionDelay: `${delay}ms` }}>
+          {children}
+        </div>
+      );
+    }
+
+    // ——— Nav ———
+    function Nav({ lang, setLang }) {
+      const links = lang === 'zh'
+        ? [['about','关于'],['experience','经历'],['expertise','专长'],['contact','联系']]
+        : [['about','About'],['experience','Experience'],['expertise','Expertise'],['contact','Contact']];
+      return (
+        <nav className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-[min(980px,calc(100%-2rem))]">
+          <div className="nav-pill rounded-full px-4 py-2.5 flex items-center justify-between">
+            <a href="#top" className="flex items-center gap-2 group">
+              <span className="w-2.5 h-2.5 rounded-full bg-neon-cyan group-hover:scale-125 transition" />
+              <span className="font-display font-semibold tracking-tight">{loc(CONTENT.name, lang)}</span>
+            </a>
+            <div className="hidden md:flex items-center gap-1">
+              {links.map(([id, label]) => (
+                <a key={id} href={`#${id}`} className="px-3 py-1.5 text-sm text-fog-300 hover:text-fog-100 transition rounded-full hover:bg-fog-700/10">{label}</a>
+              ))}
+            </div>
+            <button
+              onClick={() => setLang(lang === 'zh' ? 'en' : 'zh')}
+              className="font-mono text-xs px-3 py-1.5 rounded-full border border-fog-700/30 hover:border-neon-cyan hover:text-neon-cyan transition">
+              {lang === 'zh' ? 'EN →' : '中 →'}
+            </button>
+          </div>
+        </nav>
+      );
+    }
+
+    // ——— Hero ———
+    function Hero({ lang }) {
+      const t = CONTENT.hero;
+      const [w1, w2, w3, w4] = t.headline[lang];
+      return (
+        <section id="top" className="relative min-h-[100svh] flex flex-col justify-center pt-32 pb-20 overflow-hidden">
+          {/* blobs + grid + constellation canvas */}
+          <div className="absolute inset-0 -z-10">
+            <div className="blob blob-1" />
+            <div className="blob blob-2" />
+            <div className="blob blob-3" />
+          </div>
+          <div className="absolute inset-0 -z-10 bg-grid" />
+          <HeroCanvas />
+
+          <div className="mx-auto max-w-[1200px] w-full px-6 md:px-10">
+            <Reveal>
+              <div className="ticker mb-6 flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-neon-lime soft-pulse" />
+                <span>{loc(t.eyebrow, lang)}</span>
+              </div>
+            </Reveal>
+
+            <h1 className="font-display font-semibold tracking-[-0.02em] leading-[0.95] text-[clamp(2.6rem,8vw,7rem)]">
+              <Reveal delay={60}>
+                <div>{w1} <span className="grad-text pop-in">{w2}</span></div>
+              </Reveal>
+              <Reveal delay={160}>
+                <div>{w3} <span className="italic font-light text-fog-300">{w4}</span>.</div>
+              </Reveal>
+            </h1>
+
+            <Reveal delay={260}>
+              <p className="mt-8 max-w-[680px] text-fog-300 text-lg leading-relaxed">{loc(t.sub, lang)}</p>
+            </Reveal>
+
+            <Reveal delay={360}>
+              <div className="mt-10 flex flex-wrap items-center gap-4">
+                <Magnetic strength={0.25}>
+                  <a href={`mailto:${CONTENT.email}`} className="btn-primary">
+                    {loc(t.ctaPrimary, lang)}
+                    <span aria-hidden>↗</span>
+                  </a>
+                </Magnetic>
+                <Magnetic strength={0.18}>
+                  <a href={CONTENT.resumeUrl} download className="btn-ghost">
+                    {loc(t.ctaSecondary, lang)}
+                    <span aria-hidden>↓</span>
+                  </a>
+                </Magnetic>
+              </div>
+            </Reveal>
+
+            {/* meta row */}
+            <Reveal delay={460}>
+              <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-ink-700 pt-8">
+                {CONTENT.stats.map((s, i) => (
+                  <div key={i}>
+                    <div className="font-display text-3xl md:text-4xl font-semibold">
+                      <span className="grad-text"><Counter value={s.num} /></span>
+                    </div>
+                    <div className="mt-1 font-mono text-[11px] uppercase tracking-widest text-fog-500">{loc(s, lang)}</div>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+          </div>
+
+          {/* floating corner labels */}
+          <div className="pointer-events-none absolute top-28 left-6 md:left-10 font-mono text-[11px] tracking-[0.2em] text-fog-500 uppercase rotate-[270deg] origin-left hidden lg:block">
+            {loc(CONTENT.role, lang)} · {loc(CONTENT.locale, lang)}
+          </div>
+          <div className="pointer-events-none absolute bottom-8 right-6 md:right-10 font-mono text-[11px] tracking-widest text-fog-500 flex items-center gap-2">
+            <span className="w-4 h-px bg-fog-500" />
+            scroll
+          </div>
+        </section>
+      );
+    }
+
+    // ——— Marquee of skills ———
+    function Marquee({ lang }) {
+      const items = CONTENT.marquee[lang];
+      const row = [...items, ...items];
+      return (
+        <div className="relative py-12 border-y border-ink-700/60 overflow-hidden">
+          <div className="flex marquee-track whitespace-nowrap">
+            {row.map((x, i) => (
+              <div key={i} className="flex items-center gap-10 pr-10">
+                <span className="font-display text-3xl md:text-5xl text-fog-500 hover:text-fog-100 transition">{x}</span>
+                <span className="w-2 h-2 rounded-full bg-neon-magenta/70" />
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    // ——— About (with Tilt portrait + inline education) ———
+    function About({ lang }) {
+      const t = CONTENT.about;
+      const edu = CONTENT.education;
+      // Set to false and add a real ./cameron.jpg in the folder to show your portrait.
+      // Until then, we render the "何" watermark fallback to avoid broken-image flicker.
+      const [imgFailed, setImgFailed] = useState(true);
+      return (
+        <section id="about" className="relative py-28 md:py-40">
+          <div className="mx-auto max-w-[1200px] px-6 md:px-10 grid md:grid-cols-12 gap-10">
+            <div className="md:col-span-5">
+              <Reveal>
+                <div className="section-label mb-6">{loc(t.label, lang)}</div>
+              </Reveal>
+              <Reveal delay={80}>
+                <Tilt max={6}>
+                  <div className="aspect-[4/5] rounded-3xl neon-border overflow-hidden relative group" data-cursor="hover">
+                    {!imgFailed && (
+                      <img
+                        src="./cameron.jpg"
+                        alt={loc(CONTENT.name, lang)}
+                        className="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105"
+                        style={{ objectPosition: '70% 30%' }}
+                        onError={() => setImgFailed(true)}
+                      />
+                    )}
+                    {imgFailed && <div className="photo-initial">{lang === 'zh' ? '何' : 'C'}</div>}
+                    <div className="absolute inset-0 bg-gradient-to-br from-neon-violet/20 via-ink-800/30 to-neon-cyan/20 -z-10" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-fog-100/30 via-transparent to-transparent" />
+                    <div className="absolute top-5 left-5 flex items-center gap-2 font-mono text-[11px] uppercase tracking-widest text-fog-100/80">
+                      <span className="w-1.5 h-1.5 rounded-full bg-neon-cyan animate-pulse" />
+                      <span>{lang === 'zh' ? '拍摄于 新疆·喀纳斯' : 'shot in Kanas, Xinjiang'}</span>
+                    </div>
+                    <div className="absolute bottom-6 left-6 right-6">
+                      <div className="font-mono text-[11px] uppercase tracking-widest text-fog-300">{CONTENT.handle}</div>
+                      <div className="font-display text-2xl mt-1">{loc(CONTENT.name, lang)}</div>
+                      <div className="font-mono text-xs text-fog-500 mt-1">{loc(CONTENT.role, lang)} · {loc(CONTENT.locale, lang)}</div>
+                    </div>
+                  </div>
+                </Tilt>
+              </Reveal>
+            </div>
+
+            <div className="md:col-span-7 md:pt-16">
+              <Reveal delay={120}>
+                <h2 className="font-display text-4xl md:text-5xl font-semibold leading-[1.1] tracking-tight">
+                  {loc(t.title, lang)}
+                </h2>
+              </Reveal>
+              <Reveal delay={200}>
+                <p className="mt-8 text-fog-300 text-lg leading-relaxed max-w-[580px]">{loc(t.body, lang)}</p>
+              </Reveal>
+
+              {/* Education inline */}
+              <Reveal delay={260}>
+                <div className="mt-10 border-l-2 border-neon-cyan/50 pl-5 py-2">
+                  <div className="font-mono text-[11px] uppercase tracking-widest text-neon-cyan/80 mb-2">{loc(edu.label, lang)}</div>
+                  <div className="font-display text-xl text-fog-100">{loc(edu.school, lang)}</div>
+                  <div className="font-mono text-sm text-fog-300 mt-1">{loc(edu.major, lang)} · {edu.period}</div>
+                  <div className="font-mono text-sm text-neon-cyan/90 mt-1">{loc(edu.gpa, lang)}</div>
+                  <div className="flex flex-wrap gap-2 mt-3">
+                    {edu.highlights[lang].map((h, i) => (
+                      <span key={i} className="font-mono text-[11px] px-2.5 py-1 rounded-full border border-ink-700 text-fog-400">{h}</span>
+                    ))}
+                  </div>
+                </div>
+              </Reveal>
+
+              <Reveal delay={320}>
+                <p className="mt-8 font-mono text-sm text-neon-cyan/90">↳ {loc(t.kicker, lang)}</p>
+              </Reveal>
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+
+    // ——— Experience (real internships — 4 companies + Meituan case-study modal) ———
+    function Experience({ lang }) {
+      const t = CONTENT.experience;
+      const [openCase, setOpenCase] = useState(null);
+      return (
+        <section id="experience" className="relative py-28 md:py-40">
+          <div className="mx-auto max-w-[1200px] px-6 md:px-10">
+            <div className="mb-12">
+              <Reveal><div className="section-label mb-6">{loc(t.label, lang)}</div></Reveal>
+              <Reveal delay={60}>
+                <ConvergenceLines />
+              </Reveal>
+              <Reveal delay={140}>
+                <h2 className="font-display text-4xl md:text-6xl font-semibold tracking-tight">{loc(t.title, lang)}</h2>
+              </Reveal>
+            </div>
+
+            <div className="flex flex-col">
+              {t.items.map((it, i) => {
+                const brandKey = ['Meituan', 'eBay', 'Museland', 'Yeehai'][i];
+                const brandColor = ['#B8532A', '#2E5B7E', '#4C6B3D', '#B89141'][i];
+                return (
+                <Reveal key={i} delay={i * 60}>
+                  <div className="exp-row group grid md:grid-cols-12 gap-6 py-8 md:py-10 border-t border-ink-700 transition">
+                    <div className="md:col-span-3 flex items-start gap-3">
+                      <div className="exp-brand-mark shrink-0" style={{ color: brandColor }}>
+                        <BrandMark name={brandKey} size={32} />
+                      </div>
+                      <div className="min-w-0">
+                        <div className="font-mono text-xs text-fog-500">{it.year}</div>
+                        <div className="font-mono text-sm mt-1.5" style={{ color: brandColor }}>{it.company}</div>
+                      </div>
+                    </div>
+                    <div className="md:col-span-6">
+                      <h3 className="font-display text-2xl md:text-3xl tracking-tight">
+                        <span className="inline-block group-hover:translate-x-2 transition duration-500">
+                          {it[lang].t}
+                        </span>
+                      </h3>
+                      <p className="mt-3 text-fog-300 leading-relaxed max-w-[620px]">{it[lang].d}</p>
+                      {i === 0 && (
+                        <button
+                          type="button"
+                          className="case-trigger"
+                          onClick={() => setOpenCase('meituan')}
+                          data-cursor="hover">
+                          <span>{lang === 'zh' ? '展开完整 case study' : 'open full case study'}</span>
+                          <span>→</span>
+                        </button>
+                      )}
+                    </div>
+                    <div className="md:col-span-3 flex md:justify-end items-start gap-2 flex-wrap">
+                      {it.chip.map((c, j) => (
+                        <span key={j} className="font-mono text-[11px] px-2.5 py-1 rounded-full border border-ink-700 text-fog-300">{c}</span>
+                      ))}
+                    </div>
+                  </div>
+                </Reveal>
+                );
+              })}
+              <div className="border-t border-ink-700" />
+            </div>
+          </div>
+
+          <CaseStudyModal caseId={openCase} onClose={() => setOpenCase(null)} lang={lang} />
+        </section>
+      );
+    }
+
+    // ——— Expertise ———
+    function Expertise({ lang }) {
+      const t = CONTENT.expertise;
+      const cards = t.cards;
+      const onCardMove = (e) => {
+        const el = e.currentTarget;
+        const r = el.getBoundingClientRect();
+        el.style.setProperty('--mx', `${e.clientX - r.left}px`);
+        el.style.setProperty('--my', `${e.clientY - r.top}px`);
+      };
+      return (
+        <section id="expertise" className="relative py-28 md:py-40">
+          <div className="mx-auto max-w-[1200px] px-6 md:px-10">
+            <div className="flex flex-wrap items-end justify-between gap-6 mb-14">
+              <div>
+                <Reveal><div className="section-label mb-4">{loc(t.label, lang)}</div></Reveal>
+                <Reveal delay={80}>
+                  <h2 className="font-display text-4xl md:text-6xl font-semibold tracking-tight">{loc(t.title, lang)}</h2>
+                </Reveal>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-5 md:gap-6">
+              {cards.map((c, i) => (
+                <Reveal key={i} delay={i * 80}>
+                  <div onMouseMove={onCardMove} className="glow-card rounded-3xl p-8 md:p-10 h-full">
+                    <div className="flex items-start justify-between">
+                      <span className="font-mono text-xs text-fog-500">/ {c.tag}</span>
+                      <span className="text-fog-500 group-hover:text-neon-cyan transition">↗</span>
+                    </div>
+                    <h3 className="mt-6 font-display text-2xl md:text-3xl font-semibold tracking-tight">{c[lang].t}</h3>
+                    <p className="mt-3 text-fog-300 leading-relaxed">{c[lang].d}</p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    // ——— Social item (supports copy-to-clipboard for WeChat etc.) ———
+    function Social({ item, lang }) {
+      const [copied, setCopied] = useState(false);
+      const handleClick = (e) => {
+        if (!item.copy) return;
+        e.preventDefault();
+        try { navigator.clipboard && navigator.clipboard.writeText(item.copy); } catch {}
+        setCopied(true);
+        setTimeout(() => setCopied(false), 1400);
+      };
+      const label = copied ? (lang === 'zh' ? '已复制 ✓' : 'Copied ✓') : item.label;
+      const inner = (
+        <>
+          <span className="w-1.5 h-1.5 rounded-full bg-neon-cyan group-hover:bg-neon-magenta transition" />
+          <span>{label}</span>
+          <span className="opacity-0 group-hover:opacity-100 translate-x-0 group-hover:translate-x-1 transition">↗</span>
+        </>
+      );
+      const cls = "group flex items-center gap-2 text-fog-300 hover:text-fog-100 transition cursor-pointer";
+      if (item.copy) return <button type="button" onClick={handleClick} className={cls}>{inner}</button>;
+      const isTel = item.href && item.href.startsWith('tel:');
+      const isLocal = item.href && item.href.startsWith('./');
+      return <a href={item.href} target={(isTel || isLocal) ? undefined : "_blank"} rel="noreferrer" className={cls}>{inner}</a>;
+    }
+
+    // ——— Contact ———
+    function Contact({ lang }) {
+      const t = CONTENT.contact;
+      return (
+        <section id="contact" className="relative py-28 md:py-40 overflow-hidden">
+          <div className="absolute inset-0 -z-10 opacity-70">
+            <div className="blob blob-2" style={{ right: '-200px', top: '20%' }} />
+            <div className="blob blob-3" style={{ left: '-200px', bottom: '-100px' }} />
+          </div>
+          <div className="mx-auto max-w-[1200px] px-6 md:px-10">
+            <Reveal><div className="section-label mb-6">{loc(t.label, lang)}</div></Reveal>
+            <Reveal delay={80}>
+              <h2 className="font-display text-5xl md:text-8xl font-semibold tracking-[-0.02em] leading-[1.02] max-w-[950px]">
+                <span className="grad-text">{loc(t.title, lang)}</span>
+              </h2>
+            </Reveal>
+            <Reveal delay={160}>
+              <p className="mt-8 text-fog-300 text-lg max-w-[680px]">{loc(t.body, lang)}</p>
+            </Reveal>
+
+            <Reveal delay={240}>
+              <div className="mt-12 flex flex-wrap items-center gap-4">
+                <Magnetic strength={0.25}>
+                  <a href={`mailto:${CONTENT.email}`} className="btn-primary">
+                    {loc(t.cta, lang)}
+                    <span aria-hidden>↗</span>
+                  </a>
+                </Magnetic>
+                <a href={`mailto:${CONTENT.email}`} className="font-mono text-sm text-fog-300 hover:text-neon-cyan transition">
+                  {CONTENT.email}
+                </a>
+              </div>
+            </Reveal>
+
+            <Reveal delay={320}>
+              <div className="mt-16 flex flex-wrap gap-x-8 gap-y-4 font-mono text-sm">
+                {t.socials.map((s, i) => <Social key={i} item={s} lang={lang} />)}
+              </div>
+            </Reveal>
+          </div>
+        </section>
+      );
+    }
+
+    // ——— Footer ———
+    function Footer({ lang }) {
+      return (
+        <footer className="relative pb-10 pt-6">
+          <div className="mx-auto max-w-[1200px] px-6 md:px-10 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-fog-500">
+            <div>{loc(CONTENT.footer, lang)}</div>
+            <div className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-neon-lime animate-pulse" />
+              <span>{lang === 'zh' ? 'open to work · 2026 届' : 'open to work · class of 2026'}</span>
+            </div>
+          </div>
+        </footer>
+      );
+    }
+
+    // ——— App ———
+    function App() {
+      const initial = (typeof localStorage !== 'undefined' && localStorage.getItem('site-lang')) ||
+                      (navigator.language && navigator.language.startsWith('zh') ? 'zh' : 'en');
+      const [lang, setLangState] = useState(initial === 'en' ? 'en' : 'zh');
+      const setLang = (l) => { setLangState(l); try { localStorage.setItem('site-lang', l); } catch {} };
+      useEffect(() => { document.documentElement.lang = lang === 'zh' ? 'zh' : 'en'; }, [lang]);
+
+      return (
+        <>
+          <ScrollProgress />
+          <CursorGlow />
+          <CustomCursor />
+          <Nav lang={lang} setLang={setLang} />
+          <main>
+            <Hero lang={lang} />
+            <LogoWall lang={lang} />
+            <Marquee lang={lang} />
+            <About lang={lang} />
+            <Experience lang={lang} />
+            <Expertise lang={lang} />
+            <Contact lang={lang} />
+          </main>
+          <Footer lang={lang} />
+        </>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script>
+</body>
+</html>
