@@ -393,6 +393,201 @@
       letter-spacing: 0.12em;
     }
 
+    /* ===== AI JD Matcher — editorial paper card ===== */
+    .jd-matcher {
+      background: var(--paper-hi, #FAF6EC);
+      border: 1px solid rgba(26, 24, 21, 0.10);
+      border-radius: 12px;
+      padding: 18px 20px 20px;
+      box-shadow: 0 1px 0 rgba(26,24,21,0.04), 0 18px 40px -28px rgba(26,24,21,0.18);
+      position: relative;
+    }
+    .jd-matcher::before {
+      content: "";
+      position: absolute; left: 0; top: 0;
+      width: 64px; height: 3px;
+      background: var(--accent, #B8532A);
+      border-top-left-radius: 12px;
+    }
+    .jd-matcher__head {
+      display: flex; align-items: baseline; gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+    .jd-matcher__dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--accent, #B8532A);
+      align-self: center;
+      animation: pulseSoft 2.4s ease-in-out infinite;
+    }
+    @keyframes pulseSoft { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.6;transform:scale(.85)} }
+    .jd-matcher__title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      color: var(--ink-2, #3B3730);
+      text-transform: uppercase;
+    }
+    .jd-matcher__kicker {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: var(--ink-4, #6B6555);
+      margin-left: auto;
+    }
+    .jd-matcher__form {
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .jd-matcher__input {
+      width: 100%;
+      background: rgba(255,255,255,0.5);
+      border: 1px solid rgba(26,24,21,0.12);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: var(--ink-1, #1A1815);
+      resize: vertical;
+      min-height: 110px;
+      transition: border-color .25s, background .25s;
+    }
+    .jd-matcher__input::placeholder {
+      color: var(--ink-4, #6B6555);
+      opacity: 0.7;
+    }
+    .jd-matcher__input:focus {
+      outline: none;
+      border-color: var(--accent, #B8532A);
+      background: rgba(255,255,255,0.85);
+    }
+    .jd-matcher__btn {
+      align-self: flex-start;
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--ink-1, #1A1815);
+      color: var(--paper, #F2EDE2);
+      font-family: 'Space Grotesk', 'Inter', 'PingFang SC', sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 10px 22px;
+      border-radius: 999px;
+      border: 0;
+      cursor: pointer;
+      transition: background .25s, transform .25s cubic-bezier(.2,.7,.2,1);
+    }
+    .jd-matcher__btn:hover:not(:disabled) {
+      background: var(--accent, #B8532A);
+      transform: translateY(-1px);
+    }
+    .jd-matcher__btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .jd-matcher__result {
+      animation: jdReveal 0.5s cubic-bezier(.2,.7,.2,1);
+    }
+    @keyframes jdReveal {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: none; }
+    }
+    .jd-matcher__score-row {
+      display: flex; align-items: baseline; justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    .jd-matcher__score-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      color: var(--ink-4, #6B6555);
+      text-transform: uppercase;
+    }
+    .jd-matcher__score-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: -0.03em;
+      color: var(--accent, #B8532A);
+      line-height: 1;
+    }
+    .jd-matcher__bar {
+      height: 6px;
+      background: rgba(26,24,21,0.08);
+      border-radius: 3px;
+      overflow: hidden;
+      margin-bottom: 18px;
+    }
+    .jd-matcher__bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent, #B8532A) 0%, #D26A3E 100%);
+      border-radius: 3px;
+      transition: width 0.9s cubic-bezier(.2,.7,.2,1);
+    }
+    .jd-matcher__block {
+      margin-top: 14px;
+    }
+    .jd-matcher__block-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      color: var(--ink-4, #6B6555);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+    .jd-matcher__block-empty {
+      font-family: 'Inter', 'PingFang SC', sans-serif;
+      font-style: italic;
+      font-size: 0.92rem;
+      color: var(--ink-3, #6B6555);
+    }
+    .jd-matcher__chips {
+      display: flex; flex-wrap: wrap; gap: 6px;
+    }
+    .jd-matcher__chip {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      padding: 3px 9px;
+      border-radius: 999px;
+      letter-spacing: 0.04em;
+    }
+    .jd-matcher__chip--hit {
+      background: rgba(184, 83, 42, 0.12);
+      color: var(--accent, #B8532A);
+      border: 1px solid rgba(184, 83, 42, 0.25);
+    }
+    .jd-matcher__chip--gap {
+      background: transparent;
+      color: var(--ink-4, #6B6555);
+      border: 1px dashed rgba(26,24,21,0.20);
+    }
+    .jd-matcher__recs {
+      display: flex; flex-direction: column; gap: 6px;
+    }
+    .jd-matcher__rec {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Inter', 'PingFang SC', sans-serif;
+      font-size: 0.95rem;
+      color: var(--ink-1, #1A1815);
+      text-decoration: none;
+      padding: 4px 0;
+      transition: color .25s, transform .25s;
+    }
+    .jd-matcher__rec:hover {
+      color: var(--accent, #B8532A);
+      transform: translateX(3px);
+    }
+    .jd-matcher__rec-bullet {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--accent, #B8532A);
+      flex-shrink: 0;
+    }
+    .jd-matcher__clear {
+      margin-top: 18px;
+      background: none; border: 0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--ink-4, #6B6555);
+      cursor: pointer;
+      padding: 0;
+      letter-spacing: 0.1em;
+      transition: color .25s;
+    }
+    .jd-matcher__clear:hover { color: var(--ink-1, #1A1815); }
+
     /* Hero constellation canvas — floats behind hero text */
     .hero-canvas {
       position: absolute; inset: 0;
@@ -610,6 +805,119 @@
       opacity: 0.15;
     }
 
+    /* ===== Photo frame — editorial polaroid + ochre sticker outline ===== */
+    .photo-frame {
+      position: relative;
+      background: var(--paper-hi, #FAF6EC);
+      padding: 16px 16px 0;
+      border: 1px solid rgba(26,24,21,0.10);
+      border-radius: 6px;
+      transform: rotate(-1.5deg);
+      transition: transform .55s cubic-bezier(.2,.7,.2,1), box-shadow .55s, border-color .55s;
+      box-shadow:
+        0 1px 0 rgba(26,24,21,0.04),
+        0 18px 36px -22px rgba(26,24,21,0.18),
+        0 0 0 1px rgba(184,83,42,0) inset;
+      cursor: pointer;
+    }
+    .photo-frame:hover {
+      transform: rotate(0deg) translateY(-3px);
+      border-color: rgba(184,83,42,0.35);
+      box-shadow:
+        0 1px 0 rgba(26,24,21,0.04),
+        0 28px 52px -20px rgba(26,24,21,0.28),
+        0 0 0 2px rgba(184,83,42,0.18);
+    }
+    .photo-frame__inner {
+      position: relative;
+      aspect-ratio: 4 / 5;
+      overflow: hidden;
+      border-radius: 3px;
+      background: linear-gradient(135deg, #E6DFCE 0%, #D8CFB8 100%);
+    }
+    .photo-frame__img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 30%;
+      filter: saturate(0.95) contrast(1.02);
+      transition: transform .8s cubic-bezier(.2,.7,.2,1), filter .55s;
+    }
+    .photo-frame:hover .photo-frame__img {
+      transform: scale(1.04);
+      filter: saturate(1.05) contrast(1.04);
+    }
+    .photo-frame__top-tag {
+      position: absolute;
+      top: 14px; left: 14px;
+      display: flex; align-items: center; gap: 7px;
+      padding: 5px 10px;
+      background: rgba(242, 237, 226, 0.92);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border-radius: 999px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      color: var(--ink-2, #3B3730);
+      text-transform: uppercase;
+      z-index: 2;
+    }
+    .photo-frame__top-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--accent, #B8532A);
+      animation: pulseSoft 2.4s ease-in-out infinite;
+    }
+    .photo-frame__caption {
+      padding: 18px 6px 16px;
+      border-top: 1px dashed rgba(26,24,21,0.12);
+      margin-top: 14px;
+    }
+    .photo-frame__handle {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-4, #6B6555);
+    }
+    .photo-frame__name {
+      font-family: 'Space Grotesk', 'PingFang SC', sans-serif;
+      font-weight: 600;
+      font-size: 1.6rem;
+      letter-spacing: -0.01em;
+      color: var(--ink-1, #1A1815);
+      margin-top: 2px;
+    }
+    .photo-frame__role {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      letter-spacing: 0.10em;
+      color: var(--ink-4, #6B6555);
+      margin-top: 4px;
+    }
+    /* Decorative tape-corner marks (editorial / sticker hint) */
+    .photo-frame__corner {
+      position: absolute;
+      width: 22px; height: 22px;
+      pointer-events: none;
+    }
+    .photo-frame__corner--tl {
+      top: -6px; left: 18px;
+      background: linear-gradient(135deg, rgba(184,83,42,0.55) 0%, rgba(184,83,42,0.15) 100%);
+      border-radius: 2px;
+      transform: rotate(-12deg);
+      width: 56px; height: 16px;
+      box-shadow: 0 2px 6px -2px rgba(0,0,0,0.18);
+    }
+    .photo-frame__corner--br {
+      bottom: 56px; right: 8px;
+      width: 36px; height: 36px;
+      border: 1.5px solid var(--accent, #B8532A);
+      border-radius: 50%;
+      opacity: 0.40;
+      transform: rotate(12deg);
+    }
+
     /* Modal section heading — "filed under" kicker */
     .case-h {
       font-family: "JetBrains Mono", monospace;
@@ -664,8 +972,8 @@
       "eyebrow":   { "zh": "// 何嘉禾 Cameron · 2026 届 · 求职中",         "en": "// Cameron He · Class of 2026 · open to work" },
       "headline":  { "zh": ["我是", "一个探险家", "走在", "路上"],
                      "en": ["I am", "an explorer", "on", "the road"] },
-      "sub":       { "zh": "上海理工·数据科学在读 · 美团 产品 / eBay 品类 / Museland 内容评测 / 易海创腾 出海营销 四段实习。用数据看清问题，用商务解决问题——把每一段不确定，都走成一次可控的探险。",
-                     "en": "Data Science senior at USST · 4 internships: Meituan PM, eBay category, Museland content + model eval, Yeehai overseas marketing. See with data, solve with commerce — turning each unknown into a controllable expedition." },
+      "sub":       { "zh": "上海理工·数据科学在读 · 美团 策略 PM / eBay 品类 / Museland 内容评测 / 易海创腾 出海营销 四段实习。用数据看清问题，用商务解决问题——把每一段不确定，都走成一次可控的探险。",
+                     "en": "Data Science senior at USST · 4 internships: Meituan Strategy PM, eBay category, Museland content + model eval, Yeehai overseas marketing. See with data, solve with commerce — turning each unknown into a controllable expedition." },
       "ctaPrimary":{ "zh": "说声你好",                                    "en": "Say hi" },
       "ctaSecondary":{ "zh": "下载简历 PDF",                              "en": "Download résumé PDF" }
     },
@@ -680,8 +988,8 @@
     "about": {
       "label":     { "zh": "01 · 关于",                                  "en": "01 · About" },
       "title":     { "zh": "我是一个探险家。",                             "en": "I am an explorer." },
-      "body":      { "zh": "从易海创腾的 SEO/SEM 与海外社媒，到 Museland 的内容运营 + 模型评测，到 eBay 的智能小家电品类操盘，再到美团的 POI 标签体系建设——四段实习把我推向同一个方向：用数据看清问题，用商务解决问题。MBTI ENTJ，雅思 7 分，一年海外生活，喜欢徒步、爬山、阅读。相信日常也可以是一次探险——只要你愿意拐进那条没走过的街。",
-                     "en": "From Yeehai's SEO/SEM and overseas social, to Museland's content ops + model evaluation, to eBay's smart-appliance category management, to Meituan's POI tag system — four internships pushed me in one direction: see with data, solve with commerce. MBTI ENTJ. IELTS 7. One year abroad. Love hiking, climbing, reading. I believe everyday life can be an expedition too — if you're willing to take the street you've never walked." },
+      "body":      { "zh": "从易海创腾的 SEO/SEM 与海外社媒，到 Museland 的内容运营 + 模型评测，到 eBay 的智能小家电品类操盘，再到美团大众点评中台的内容生态治理——四段实习沿着同一种节奏：用数据看清问题，用商务解决问题。兼具 AI 应用能力与商业敏感度——既能做模型评测和双链路归因，也能在谈判桌上谈下一个百分点。MBTI ENTJ，雅思 7 分，一年海外生活，喜欢徒步、爬山、阅读。相信日常也可以是一次探险——只要你愿意拐进那条没走过的街。",
+                     "en": "From Yeehai's SEO/SEM and overseas social, to Museland's content ops + model evaluation, to eBay's smart-appliance category management, to Meituan / Dianping's content-ecosystem governance — four internships moved on the same rhythm: see with data, solve with commerce. Both AI-application fluency and commercial instinct — can run a model eval and a dual-path attribution layer, can also earn the next % at the negotiation table. MBTI ENTJ. IELTS 7. One year abroad. Love hiking, climbing, reading. I believe everyday life can be an expedition too — if you're willing to take the street you've never walked." },
       "kicker":    { "zh": "目前在 上海 · 开放 出海 / AI 相关 方向机会",
                      "en": "Based in Shanghai · Open to Overseas / AI-related roles" }
     },
@@ -698,16 +1006,16 @@
 
     "experience": {
       "label":     { "zh": "02 · 实习经历",                               "en": "02 · Experience" },
-      "title":     { "zh": "四段路，一个方向",                             "en": "Four roads, one direction" },
+      "title":     { "zh": "四段路，同一种节奏",                           "en": "Four roads, one rhythm" },
       "items": [
         {
           "year": "2025.04–09",
           "company": "美团 · Meituan",
-          "zh": { "t":"产品经理 · POI 多维度标签体系",
-                  "d":"服务商分运营，联动业务 + 算法定义 4 类标签（发布意图 / 高信息量 / 去处 / 兴趣 POI）。整合 POI 基础表 + 内容生产表，用 SQL/Python 完成清洗与异常处理，建成 1 万+ POI 标签数据集；撰写监控 PRD 跑通准 / 召 / 精 / 覆四指标看板，推动模型准召率提升至 90%+。" },
-          "en": { "t":"Product manager · multi-dim POI tagging",
-                  "d":"Defined 4 tag families with biz + algo teams: post-intent / high-info / venue / interest-POI. Joined POI master + content tables, cleaned via SQL/Python into a 10k+ POI dataset. Wrote the monitoring PRD covering precision / recall / accuracy / coverage — model precision-recall lifted to 90%+." },
-          "chip": ["PRD", "SQL/Python", "标签体系", "模型评估"]
+          "zh": { "t":"策略产品经理 · 大众点评中台 · 内容生态治理",
+                  "d":"负责大众点评笔记内容生态治理 + POI 标签体系建设。联动业务 / 算法 / 人审三方拆解标签需求，定义 4 类标签（发布意图 / 高信息量 / 去处 / 兴趣 POI）；用 SQL+Python 整合 POI 基础表 × 内容生产表，建成 1 万+ POI 标签数据集。SQL+BI 搭 T+1 多维看板覆盖准 / 召 / 精 / 覆 + 笔记生态负向水位；按「分模型链路 × 人审链路」做低质水位归因，指标异常时重训模型，准召率提升至 90%+。" },
+          "en": { "t":"Strategy PM · Dianping platform · content-ecosystem governance",
+                  "d":"Owned content-ecosystem governance + POI tagging on Dianping platform. Aligned biz / algo / human-review teams on 4 tag families (post-intent / high-info / venue / interest-POI); joined POI master × content tables via SQL+Python into a 10k+ POI dataset. Built T+1 BI dashboards covering precision / recall / accuracy / coverage + negative-water-line of the notes ecosystem; ran model-path × review-path attribution on low-quality content and triggered re-training on anomalies — model precision-recall lifted to 90%+." },
+          "chip": ["策略 PM", "SQL/Python", "生态治理", "双链路归因"]
         },
         {
           "year": "2024.09–2025.04",
@@ -731,9 +1039,9 @@
           "year": "2022.12–2023.03",
           "company": "易海创腾 · Yeehai",
           "zh": { "t":"出海数字营销 · SEO + SEM + 社媒",
-                  "d":"用 GA + Facebook 互动数据画用户画像，本地化策划 3 篇核心内容（测评 / 用户故事 / 场景指南）+ Canva 设计 6 张海报，测评文章阅读 3000+、海报点击 1200+、社媒粉丝 +20%。同步官网 SEO（标题 / H1 / FAQ 长尾词）+ 加拿大 Google Ads 投放：1 个月后官网 DR +32、核心词进 Google Top 8、自然流量 +30%、SEM 转化 8%。" },
+                  "d":"用 GA + Facebook 互动数据画用户画像，本地化策划 3 篇核心内容（测评 / 用户故事 / 场景指南）+ Canva 设计 6 张海报，测评文章阅读 2000+、社媒粉丝 +10%。同步官网 SEO（标题 / H1 / FAQ 长尾词）+ 加拿大 Google Ads 投放：1 个月后官网 DR +32、核心词进 Google Top 8、自然流量 +30%、SEM 转化 8%。" },
                   "en": { "t":"Overseas digital marketing · SEO + SEM + social",
-                  "d":"Built audience personas via GA + Facebook signals. Localized 3 hero pieces (review / story / scenario guide) + 6 Canva posters — 3k+ reads, 1.2k+ clicks, +20% social followers. Ran site SEO (title / H1 / long-tail FAQ) + Google Ads to Canada: site DR +32, core keywords into Google Top 8, organic traffic +30%, SEM conversion 8%." },
+                  "d":"Built audience personas via GA + Facebook signals. Localized 3 hero pieces (review / story / scenario guide) + 6 Canva posters — 2k+ reads, +10% social followers. Ran site SEO (title / H1 / long-tail FAQ) + Google Ads to Canada: site DR +32, core keywords into Google Top 8, organic traffic +30%, SEM conversion 8%." },
           "chip": ["SEO", "SEM", "Google Ads", "GA"]
         }
       ]
@@ -764,8 +1072,8 @@
     "contact": {
       "label":     { "zh": "04 · 联系",                                  "en": "04 · Contact" },
       "title":     { "zh": "下一段路，也许一起走？",                         "en": "Maybe take the next road together?" },
-      "body":      { "zh": "正在找 出海 / AI 相关 方向的机会——商务、客户成功、产品运营、市场都聊。如果我们方向对得上，写封邮件、加个微信、或者打个电话，随时。",
-                     "en": "Open to Overseas / AI-related roles — business, customer success, product ops, marketing. If we're heading the same way: email, WeChat, or a call, anytime." },
+      "body":      { "zh": "正在找 出海 / AI 相关 方向的机会——商务、产品运营、市场都聊。如果我们方向对得上，写封邮件、加个微信、或者打个电话，随时。",
+                     "en": "Open to Overseas / AI-related roles — business, product ops, marketing. If we're heading the same way: email, WeChat, or a call, anytime." },
       "cta":       { "zh": "写封邮件",                                    "en": "Send an email" },
       "socials": [
         { "label":"WeChat · 15574915376",     "copy":"15574915376" },
@@ -1244,42 +1552,42 @@
     const CASES = {
       meituan: {
         zh: {
-          title: '美团 · POI 多维度标签体系 · 商分运营',
-          period: '2025.04 — 2025.09  ·  产品 + 数据实习',
-          chips: ['PRD', 'SQL/Python', '标签体系', '模型评估'],
-          problem:  '商分运营团队要从 1 万+ POI 与海量内容里帮用户"发现好去处"。但旧标签零散、定义不清——业务难拍板、算法难训练，关键指标长期卡在 70% 左右上不去。',
-          approach: '联动业务 + 算法定义 4 类标签（发布意图 / 高信息量 / 去处 / 兴趣 POI），输出标准化定义文档。整合 POI 基础信息表 + 内容生产表，用 SQL/Python 完成分类、冗余清洗、缺失值与异常处理，建成 1 万+ POI 标签数据集；撰写监控 PRD，实现"准 / 召 / 精 / 覆"四指标全生命周期看板，未达标时主动排查并联动算法团队重训。',
+          title: '美团 · 大众点评中台 · 内容生态治理 + POI 标签体系',
+          period: '2025.04 — 2025.09  ·  策略产品经理实习',
+          chips: ['策略 PM', 'SQL/Python', '生态治理', '双链路归因'],
+          problem:  '大众点评每天有海量笔记进入用户视野——但「真实、有用、有信息量」不能只靠人工审核。1 万+ POI × 数倍内容生产量，旧标签零散、负向水位无监控，导致优质内容沉底、低质内容反复浮现。中台需要的不是更"对"的算法，而是一套能让算法 / 业务 / 人审三方对齐的标签体系 + 实时监控。',
+          approach: '协同业务 / 算法 / 人审拆解需求，定义 4 类标签（发布意图 / 高信息量 / 去处 / 兴趣 POI）并输出标准化定义文档。整合 POI 基础表 × 内容生产表，用 SQL+Python 完成分类、冗余清洗、缺失值与异常处理，建成 1 万+ POI 数据集供算法训练。监控侧用 SQL+BI 搭 T+1 多维看板，覆盖准 / 召 / 精 / 覆 + 笔记生态负向水位；按「分模型链路 × 人审链路」做低质水位归因——指标异常时主动排查并筛选新数据集联动算法团队重训。',
           metrics:  [
             { v: '1万+', l: 'POI 标签数据集' },
             { v: '90%+', l: '模型准召率' },
-            { v: '4 类', l: '标签体系上线' }
+            { v: 'T+1', l: '生态监控 + 双链路归因' }
           ],
-          chartCaption: '随着每一轮"问题样本回灌 → 重训 → 看板复盘"的迭代，模型核心指标从 70% 稳步爬升至 90%+。',
+          chartCaption: '随每一轮「负向水位归因 → 数据集回灌 → 重训」迭代，模型核心指标从 70% 稳步爬升至 90%+。',
           reflectsLabel: '我从这段实习里学到的',
           reflects: [
+            { t: '"问题在哪一根链路上"比"问题是什么"更重要', d: '一次负向水位上升，可能 80% 来自人审标准漂移、20% 来自模型退化。没有「分模型 × 人审」双链路归因，你会去重训一个本没病的模型；有了它，你修对的那一根。' },
             { t: 'PRD 不是写给自己看的', d: '跨团队对齐时，"业务可执行的定义"比"完美的体系"更重要。一句"高信息量 = 文案 ≥ 30 字 + 至少 1 张图 + 含品类词"——比 1 页玄学描述好用 10 倍。' },
-            { t: '数据清洗 ≠ 工程脏活', d: '每一次缺失值的处理选择，都在影响下游模型对哪类用户更敏感。把"先占位再回灌"这件事讲清楚的人，决定了模型上线后召回偏向哪一类内容。' },
-            { t: '监控看板让"问题"按小时计', d: '准召掉了，过去靠季度复盘。看板上线后，BD 同学早 10 点就能看到"昨天新流入 POI 的兴趣标签覆盖只有 62%"——问题在小时级被发现，而不是季度级被复盘。' }
+            { t: '数据清洗 ≠ 工程脏活', d: '每一次缺失值的处理选择，都在影响下游模型对哪类用户更敏感。把"先占位再回灌"这件事讲清楚的人，决定了模型上线后召回偏向哪一类内容。' }
           ],
           closeHint: 'ESC 关闭'
         },
         en: {
-          title: 'Meituan · Multi-dim POI Tagging · Discovery Ops',
-          period: '2025.04 — 2025.09 · Product + Data intern',
-          chips: ['PRD', 'SQL/Python', 'Tagging system', 'Model evaluation'],
-          problem:  "The discovery-ops team had to surface 'great places' from 10k+ POIs and millions of pieces of UGC. The old tags were fragmented and ill-defined — biz couldn't decide, algo couldn't train. Core metrics had been stuck near 70%.",
-          approach: 'Worked with biz + algo to define 4 tag families: post-intent / high-info / venue / interest-POI, with standardized definition docs. Joined POI master + content tables; used SQL / Python to classify, dedupe, and handle missing / outlier values into a 10k+ POI labeled dataset. Wrote the monitoring PRD covering precision / recall / accuracy / coverage with full-lifecycle dashboards — surfacing issues early and triggering algo retraining loops.',
+          title: 'Meituan · Dianping Platform · Content-Ecosystem Governance',
+          period: '2025.04 — 2025.09 · Strategy PM intern',
+          chips: ['Strategy PM', 'SQL/Python', 'Ecosystem governance', 'Dual-path attribution'],
+          problem:  "Every day Dianping's 'notes' surfaces an ocean of UGC — but 'real, useful, information-dense' can't ride on human review alone. With 10k+ POIs and a content firehose, old tagging was fragmented and there was no live monitoring of the negative-water-line — quality content sank, low-quality content kept resurfacing. The platform didn't need a 'better' algorithm; it needed a tag system + live monitoring that biz / algo / human-review could all align on.",
+          approach: "Aligned biz / algo / review on 4 tag families (post-intent / high-info / venue / interest-POI) with standardized definition docs. Joined POI master × content tables via SQL+Python — classification, dedup, missing-value and outlier handling — into a 10k+ POI dataset for algo training. Built T+1 BI dashboards covering precision / recall / accuracy / coverage + ecosystem negative-water-line; ran model-path × review-path attribution on low-quality content, triggering targeted re-training when anomalies surfaced.",
           metrics:  [
             { v: '10k+', l: 'POI labeled dataset' },
             { v: '90%+', l: 'Model precision-recall' },
-            { v: '4', l: 'Tag families shipped' }
+            { v: 'T+1', l: 'Live monitoring + dual-path attribution' }
           ],
-          chartCaption: 'Each "problem-sample reflux → retrain → dashboard review" cycle pushed core metrics from 70% steadily up past 90%.',
+          chartCaption: 'Each "negative-water-line attribution → dataset reflux → retrain" cycle pushed core metrics from 70% steadily past 90%.',
           reflectsLabel: 'What this internship taught me',
           reflects: [
+            { t: '"Which path is the issue on" beats "What is the issue"', d: 'A negative-water-line spike might be 80% review-standard drift and 20% model decay. Without a model-path × review-path attribution layer, you re-train a model that wasn\'t sick; with it, you fix the right path.' },
             { t: 'A PRD is not written for yourself', d: "When aligning across teams, an 'executable definition' beats a 'perfect framework'. One line — 'high-info = ≥30 chars + ≥1 image + category keyword' — beats a page of vague taxonomy 10×." },
-            { t: 'Data cleaning ≠ janitor work', d: 'Each missing-value choice shapes which user segment the downstream model becomes more sensitive to. Whoever can articulate the "placeholder-now, backfill-later" call effectively decides what kind of content the model favors.' },
-            { t: 'Dashboards turn issues hourly', d: "Precision-recall dips used to surface in quarterly reviews. With the dashboard live, BD could see by 10am that 'newly-arrived POIs only have 62% interest-tag coverage' — issues surface in hours, not quarters." }
+            { t: 'Data cleaning ≠ janitor work', d: 'Each missing-value choice shapes which user segment the downstream model becomes more sensitive to. Whoever can articulate the "placeholder-now, backfill-later" call effectively decides what kind of content the model favors.' }
           ],
           closeHint: 'press ESC to close'
         }
@@ -1410,7 +1718,7 @@
     // ——— Logo wall — past employer logos in editorial layout ———
     function LogoWall({ lang }) {
       const items = [
-        { mark: 'Meituan',  cn: '美团',         accent: '#B8532A', period: '2025 · 标签 PM' },
+        { mark: 'Meituan',  cn: '美团 大众点评',  accent: '#B8532A', period: '2025 · 策略 PM' },
         { mark: 'eBay',     cn: '上海亿贝',      accent: '#2E5B7E', period: '2024–25 · 品类' },
         { mark: 'Museland', cn: '逐路行',        accent: '#4C6B3D', period: '2024 · 内容评测' },
         { mark: 'Yeehai',   cn: '易海创腾',      accent: '#B89141', period: '2022–23 · SEO/SEM' },
@@ -1491,6 +1799,215 @@
       );
     }
 
+    // ——— JD Matcher (pure-frontend tokenize + score, no API) ———
+    // Skill DB: each entry maps a canonical skill to its aliases + which case studies it appears in.
+    // Used both for keyword matching and for case-recommendation after match.
+    const SKILL_DB = [
+      // Hard skills · data
+      { key: 'sql',          aliases: ['sql', 'mysql', 'postgresql', 'database', '数据库'],                         cases: ['meituan','ebay'] },
+      { key: 'python',       aliases: ['python', 'py', 'pandas', 'numpy'],                                        cases: ['meituan','museland'] },
+      { key: 'r',            aliases: ['r语言', ' r '],                                                              cases: ['expertise'] },
+      { key: 'tableau',      aliases: ['tableau', '数据可视化', '可视化'],                                            cases: ['expertise'] },
+      { key: 'excel',        aliases: ['excel', 'xlookup', 'vba', 'pivot', '透视'],                                  cases: ['ebay'] },
+      { key: 'spark',        aliases: ['spark', 'hadoop', '大数据'],                                                 cases: ['expertise'] },
+      // 数据 & 模型
+      { key: '数据分析',      aliases: ['数据分析', 'data analysis', 'analytics', '分析师', 'data analyst'],            cases: ['meituan','ebay'] },
+      { key: 'rfm',          aliases: ['rfm', '用户分层', '客户分层'],                                                 cases: ['meituan'] },
+      { key: '模型',          aliases: ['模型', 'model', 'machine learning', 'ml', 'ai模型', '算法'],                   cases: ['meituan','museland'] },
+      { key: 'prd',          aliases: ['prd', '产品需求', '需求文档', '产品文档'],                                       cases: ['meituan'] },
+      // 出海 / 国际化
+      { key: '出海',          aliases: ['出海', 'overseas', 'cross-border', '跨境', '国际化', 'globalization'],         cases: ['yeehai','ebay'] },
+      { key: '本地化',        aliases: ['本地化', 'localization', 'l10n'],                                            cases: ['yeehai'] },
+      { key: 'seo',          aliases: ['seo', '搜索引擎优化', '自然流量'],                                              cases: ['yeehai'] },
+      { key: 'sem',          aliases: ['sem', 'paid search', '付费搜索'],                                            cases: ['yeehai'] },
+      { key: 'google ads',   aliases: ['google ads', 'adwords', '谷歌广告'],                                          cases: ['yeehai'] },
+      { key: 'facebook ads', aliases: ['facebook ads', 'meta ads', 'fb ads', '社媒广告'],                              cases: ['yeehai'] },
+      { key: 'aso',          aliases: ['aso', 'app store优化', '应用商店'],                                            cases: ['museland'] },
+      { key: 'google analytics', aliases: ['ga', 'google analytics', '谷歌分析'],                                      cases: ['yeehai'] },
+      // 商务 / 销售 / 客户
+      { key: '商务',          aliases: ['商务', 'bd', 'business development', '业务拓展'],                              cases: ['ebay','meituan'] },
+      { key: '客户成功',      aliases: ['客户成功', 'customer success', 'cs '],                                         cases: ['ebay'] },
+      { key: 'kam',          aliases: ['kam', 'key account', '大客户', '客户管理'],                                    cases: ['meituan','ebay'] },
+      { key: '采销',          aliases: ['采销', '采购', 'sourcing', 'buying'],                                         cases: ['ebay'] },
+      { key: '品类',          aliases: ['品类', 'category', '类目'],                                                  cases: ['ebay'] },
+      { key: '谈判',          aliases: ['谈判', 'negotiation', 'negotiate'],                                          cases: ['ebay'] },
+      // AI / LLM
+      { key: 'ai',           aliases: ['ai', '人工智能', 'artificial intelligence', '生成式', 'genai'],                 cases: ['museland','meituan'] },
+      { key: 'llm',          aliases: ['llm', 'gpt', '大模型', 'language model', 'chatgpt', 'claude'],                cases: ['museland'] },
+      { key: '模型评测',      aliases: ['模型评测', '模型评估', 'eval', 'evaluation', '红队', 'red team'],                cases: ['museland'] },
+      // 运营 / 内容
+      { key: '内容',          aliases: ['内容', 'content', '文案', 'copy'],                                            cases: ['museland','yeehai'] },
+      { key: '运营',          aliases: ['运营', 'ops', 'operations'],                                                cases: ['museland','meituan'] },
+      { key: '增长',          aliases: ['增长', 'growth', 'user growth'],                                            cases: ['museland','yeehai'] },
+      // 通用
+      { key: '英语',          aliases: ['english', '英语', '英文', 'ielts', '雅思'],                                   cases: ['expertise'] },
+      { key: '产品',          aliases: ['产品', 'product', 'pm'],                                                   cases: ['meituan','museland'] },
+    ];
+
+    // Cases meta for recommendation labels
+    const CASE_META = {
+      meituan:   { zh: '美团 · CKA / POI 标签体系',           en: 'Meituan · CKA / POI tagging' },
+      ebay:      { zh: 'eBay · 智能小家电品类操盘',            en: 'eBay · smart-appliance category' },
+      museland:  { zh: 'Museland · AI 模型评测 + 内容运营',    en: 'Museland · AI model eval + content' },
+      yeehai:    { zh: '易海创腾 · 出海 SEO/SEM 全链路',       en: 'Yeehai · overseas SEO/SEM' },
+      expertise: { zh: '能力与工具',                          en: 'Skills & tools' },
+    };
+
+    function matchJD(jdText) {
+      const text = (jdText || '').toLowerCase();
+      if (!text.trim()) return null;
+      const matched = [];
+      const caseHits = {};
+      SKILL_DB.forEach(s => {
+        const hit = s.aliases.some(a => text.includes(a.toLowerCase()));
+        if (hit) {
+          matched.push(s.key);
+          s.cases.forEach(c => { caseHits[c] = (caseHits[c] || 0) + 1; });
+        }
+      });
+      // Gap detection: ONLY English terms that look like real tech/job keywords
+      // (Chinese 2-4 char chunks are too noisy — over-extract from JD prose, not actual skills)
+      const allCoveredAliases = new Set();
+      SKILL_DB.forEach(s => s.aliases.forEach(a => allCoveredAliases.add(a.toLowerCase().trim())));
+      const englishTokens = (text.match(/[a-z][a-z0-9+.\-]{2,19}/g) || []);
+      const seenGaps = new Set();
+      const gaps = [];
+      englishTokens.forEach(t => {
+        if (STOP_WORDS.has(t) || seenGaps.has(t)) return;
+        // Skip if covered by any alias
+        const isCovered = [...allCoveredAliases].some(a => a === t || a.includes(t) || t.includes(a));
+        if (isCovered) return;
+        seenGaps.add(t);
+        gaps.push(t);
+      });
+      // Score: matched / (matched + capped gaps) — cap gaps so high-fit JDs stay high
+      const cappedGaps = Math.min(gaps.length, Math.max(2, Math.floor(matched.length * 0.4)));
+      const score = matched.length === 0 ? 0
+                  : Math.round(100 * matched.length / Math.max(1, matched.length + cappedGaps));
+      // Recommend top 2-3 cases
+      const recs = Object.entries(caseHits)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 3)
+        .map(([c]) => c);
+      return { score, matched, gaps: gaps.slice(0, 6), recs };
+    }
+
+    const STOP_WORDS = new Set(['the','and','for','with','that','this','from','will','can','have','has','our','your','their','about','more','any','all','not','but','are','was','were','been','being','use','using','used','via','per','etc','also','such','into','out','over','under','within','across','able','must','should','would','could','may','might','need','needs','required','requires','plus','years','year','team','role','work','company','products','product','services','service','project','projects']);
+    const STOP_WORDS_CN = new Set(['公司','工作','岗位','职位','要求','负责','以上','优先','加分','工作经验','以及','并且','或者','需要','能够','具有','具备','熟悉','了解','掌握','精通','强烈','优秀','良好','以及','其他','进行','一定','相关','方向','经验','能力','技能','知识','项目','团队','业务','的','与','和','或','及','在','为','是','有','本','公']);
+    const SKILL_LIKELY = /^[a-z]{3,}$|^[一-龥]{2,4}$/;
+
+    function JDMatcher({ lang }) {
+      const [jd, setJd] = useState('');
+      const [result, setResult] = useState(null);
+      const [thinking, setThinking] = useState(false);
+      const onMatch = () => {
+        if (!jd.trim()) return;
+        setThinking(true);
+        // Tiny artificial delay so the user feels something happened
+        setTimeout(() => {
+          setResult(matchJD(jd));
+          setThinking(false);
+        }, 480);
+      };
+      const onClear = () => { setJd(''); setResult(null); };
+      const t = {
+        title:  { zh: 'AI 岗位匹配器', en: 'AI Job Matcher' },
+        kicker: { zh: '把 JD 粘进来，看看我们方向对不对', en: 'Paste a JD, see if we match' },
+        ph:     { zh: '粘贴 JD 文本（中英文都行）...', en: 'Paste a JD here (Chinese or English)...' },
+        cta:    { zh: '开始匹配', en: 'Run match' },
+        thinking: { zh: '正在比对...', en: 'Matching...' },
+        score:  { zh: '匹配度', en: 'Match score' },
+        hits:   { zh: '命中能力', en: 'Skills hit' },
+        gaps:   { zh: 'JD 提到、我没强调的', en: "JD mentions I don't emphasize" },
+        recs:   { zh: '推荐先看', en: 'Recommended next' },
+        clear:  { zh: '换一个 JD', en: 'Try another JD' },
+        empty:  { zh: '0 项匹配——可能不是我的方向。也欢迎邮件聊聊。', en: 'No matches — likely not my fit. Still happy to chat.' },
+      };
+      const cls = (s) => loc(s, lang);
+      return (
+        <div className="jd-matcher">
+          <div className="jd-matcher__head">
+            <span className="jd-matcher__dot" />
+            <span className="jd-matcher__title">// {cls(t.title)}</span>
+            <span className="jd-matcher__kicker">{cls(t.kicker)}</span>
+          </div>
+          {!result && (
+            <div className="jd-matcher__form">
+              <textarea
+                className="jd-matcher__input"
+                value={jd}
+                onChange={(e) => setJd(e.target.value)}
+                placeholder={cls(t.ph)}
+                rows={4}
+                data-cursor="hover"
+              />
+              <button
+                type="button"
+                className="jd-matcher__btn"
+                onClick={onMatch}
+                disabled={!jd.trim() || thinking}
+                data-cursor="hover">
+                {thinking ? cls(t.thinking) : <>{cls(t.cta)} <span aria-hidden>→</span></>}
+              </button>
+            </div>
+          )}
+          {result && (
+            <div className="jd-matcher__result">
+              <div className="jd-matcher__score-row">
+                <div className="jd-matcher__score-label">{cls(t.score)}</div>
+                <div className="jd-matcher__score-num">{result.score}%</div>
+              </div>
+              <div className="jd-matcher__bar">
+                <div className="jd-matcher__bar-fill" style={{ width: `${result.score}%` }} />
+              </div>
+
+              {result.matched.length > 0 ? (
+                <div className="jd-matcher__block">
+                  <div className="jd-matcher__block-label">✓ {cls(t.hits)} · {result.matched.length}</div>
+                  <div className="jd-matcher__chips">
+                    {result.matched.map((m, i) => (
+                      <span key={i} className="jd-matcher__chip jd-matcher__chip--hit">{m}</span>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <div className="jd-matcher__block jd-matcher__block-empty">{cls(t.empty)}</div>
+              )}
+
+              {result.gaps.length > 0 && (
+                <div className="jd-matcher__block">
+                  <div className="jd-matcher__block-label">△ {cls(t.gaps)}</div>
+                  <div className="jd-matcher__chips">
+                    {result.gaps.map((g, i) => (
+                      <span key={i} className="jd-matcher__chip jd-matcher__chip--gap">{g}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {result.recs.length > 0 && (
+                <div className="jd-matcher__block">
+                  <div className="jd-matcher__block-label">→ {cls(t.recs)}</div>
+                  <div className="jd-matcher__recs">
+                    {result.recs.map((c, i) => (
+                      <a key={i} href={c === 'expertise' ? '#expertise' : '#experience'} className="jd-matcher__rec">
+                        <span className="jd-matcher__rec-bullet" />
+                        {loc(CASE_META[c], lang)}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <button type="button" className="jd-matcher__clear" onClick={onClear} data-cursor="hover">
+                ← {cls(t.clear)}
+              </button>
+            </div>
+          )}
+        </div>
+      );
+    }
+
     // ——— Hero ———
     function Hero({ lang }) {
       const t = CONTENT.hero;
@@ -1544,6 +2061,13 @@
               </div>
             </Reveal>
 
+            {/* AI JD matcher — pure-frontend keyword scorer */}
+            <Reveal delay={440}>
+              <div className="mt-10 max-w-[680px]">
+                <JDMatcher lang={lang} />
+              </div>
+            </Reveal>
+
             {/* meta row */}
             <Reveal delay={460}>
               <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 border-t border-ink-700 pt-8">
@@ -1593,9 +2117,9 @@
     function About({ lang }) {
       const t = CONTENT.about;
       const edu = CONTENT.education;
-      // Set to false and add a real ./cameron.jpg in the folder to show your portrait.
-      // Until then, we render the "何" watermark fallback to avoid broken-image flicker.
-      const [imgFailed, setImgFailed] = useState(true);
+      // Default: try to load ./cameron-portrait.jpg. If file is missing we gracefully fall back to "何" watermark.
+      // To use your own photo: drop a file named `cameron-portrait.jpg` into the personal-site folder.
+      const [imgFailed, setImgFailed] = useState(false);
       return (
         <section id="about" className="relative py-28 md:py-40">
           <div className="mx-auto max-w-[1200px] px-6 md:px-10 grid md:grid-cols-12 gap-10">
@@ -1604,29 +2128,30 @@
                 <div className="section-label mb-6">{loc(t.label, lang)}</div>
               </Reveal>
               <Reveal delay={80}>
-                <Tilt max={6}>
-                  <div className="aspect-[4/5] rounded-3xl neon-border overflow-hidden relative group" data-cursor="hover">
-                    {!imgFailed && (
-                      <img
-                        src="./cameron.jpg"
-                        alt={loc(CONTENT.name, lang)}
-                        className="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-105"
-                        style={{ objectPosition: '70% 30%' }}
-                        onError={() => setImgFailed(true)}
-                      />
-                    )}
-                    {imgFailed && <div className="photo-initial">{lang === 'zh' ? '何' : 'C'}</div>}
-                    <div className="absolute inset-0 bg-gradient-to-br from-neon-violet/20 via-ink-800/30 to-neon-cyan/20 -z-10" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-fog-100/30 via-transparent to-transparent" />
-                    <div className="absolute top-5 left-5 flex items-center gap-2 font-mono text-[11px] uppercase tracking-widest text-fog-100/80">
-                      <span className="w-1.5 h-1.5 rounded-full bg-neon-cyan animate-pulse" />
-                      <span>{lang === 'zh' ? '拍摄于 新疆·喀纳斯' : 'shot in Kanas, Xinjiang'}</span>
+                <Tilt max={5}>
+                  <div className="photo-frame group" data-cursor="hover">
+                    <div className="photo-frame__inner">
+                      {!imgFailed && (
+                        <img
+                          src="./cameron-portrait.jpg"
+                          alt={loc(CONTENT.name, lang)}
+                          className="photo-frame__img"
+                          onError={() => setImgFailed(true)}
+                        />
+                      )}
+                      {imgFailed && <div className="photo-initial">{lang === 'zh' ? '何' : 'C'}</div>}
+                      <div className="photo-frame__top-tag">
+                        <span className="photo-frame__top-dot" />
+                        <span>{lang === 'zh' ? '拍摄于 新疆·喀纳斯' : 'shot in Kanas, Xinjiang'}</span>
+                      </div>
                     </div>
-                    <div className="absolute bottom-6 left-6 right-6">
-                      <div className="font-mono text-[11px] uppercase tracking-widest text-fog-300">{CONTENT.handle}</div>
-                      <div className="font-display text-2xl mt-1">{loc(CONTENT.name, lang)}</div>
-                      <div className="font-mono text-xs text-fog-500 mt-1">{loc(CONTENT.role, lang)} · {loc(CONTENT.locale, lang)}</div>
+                    <div className="photo-frame__caption">
+                      <div className="photo-frame__handle">{CONTENT.handle}</div>
+                      <div className="photo-frame__name">{loc(CONTENT.name, lang)}</div>
+                      <div className="photo-frame__role">{loc(CONTENT.role, lang)} · {loc(CONTENT.locale, lang)}</div>
                     </div>
+                    <div className="photo-frame__corner photo-frame__corner--tl" />
+                    <div className="photo-frame__corner photo-frame__corner--br" />
                   </div>
                 </Tilt>
               </Reveal>
